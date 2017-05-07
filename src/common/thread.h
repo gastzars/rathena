@@ -5,13 +5,9 @@
 #ifndef _rA_THREAD_H_
 #define _rA_THREAD_H_
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 #include "cbasetypes.h"
 
-typedef struct rAthread *prAthread;
+typedef struct rAthread *rAthread;
 typedef void* (*rAthreadProc)(void*);
 
 typedef enum RATHREAD_PRIO {
@@ -29,7 +25,7 @@ typedef enum RATHREAD_PRIO {
  * 
  * @return not NULL if success
  */
-prAthread rathread_create( rAthreadProc entryPoint,  void *param );
+rAthread rathread_create( rAthreadProc entryPoint,  void *param );
 
 
 /** 
@@ -42,7 +38,7 @@ prAthread rathread_create( rAthreadProc entryPoint,  void *param );
  *
  * @return not NULL if success
  */
-prAthread rathread_createEx( rAthreadProc entryPoint,  void *param,  size_t szStack,  RATHREAD_PRIO prio );
+rAthread rathread_createEx( rAthreadProc entryPoint,  void *param,  size_t szStack,  RATHREAD_PRIO prio );
 
 
 /**
@@ -52,7 +48,7 @@ prAthread rathread_createEx( rAthreadProc entryPoint,  void *param,  size_t szSt
  *
  * @param handle - thread to destroy.
  */
-void rathread_destroy ( prAthread handle );
+void rathread_destroy ( rAthread handle );
 
 
 /** 
@@ -63,7 +59,7 @@ void rathread_destroy ( prAthread handle );
  * 
  * @return not NULL if success
  */
-prAthread rathread_self( );
+rAthread rathread_self( );
 
 
 /**
@@ -85,7 +81,7 @@ int rathread_get_tid();
  * 
  * @return true - if the given thread has been terminated.
  */
-bool rathread_wait( prAthread handle,  void* *out_exitCode );
+bool rathread_wait( rAthread handle,  void* *out_exitCode );
 
 
 /** 
@@ -94,7 +90,7 @@ bool rathread_wait( prAthread handle,  void* *out_exitCode );
  * @param handle - thread to set prio for
  * @param rio - the priority (RAT_PRIO_LOW ... )
  */
-void rathread_prio_set( prAthread handle, RATHREAD_PRIO prio );
+void rathread_prio_set( rAthread handle, RATHREAD_PRIO prio );
 
 
 /** 
@@ -102,7 +98,7 @@ void rathread_prio_set( prAthread handle, RATHREAD_PRIO prio );
  *
  * @param handle - the thread to get the prio for.
  */
-RATHREAD_PRIO rathread_prio_get( prAthread handle);
+RATHREAD_PRIO rathread_prio_get( rAthread handle);
 
 
 /**
@@ -119,8 +115,5 @@ void rathread_yield();
 void rathread_init();
 void rathread_final();
 
-#ifdef __cplusplus
-}
-#endif
 
 #endif

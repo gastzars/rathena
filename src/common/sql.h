@@ -4,10 +4,6 @@
 #ifndef _COMMON_SQL_H_
 #define _COMMON_SQL_H_
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 #include "cbasetypes.h"
 #include <stdarg.h>// va_list
 
@@ -345,8 +341,5 @@ void SqlStmt_Free(SqlStmt* self);
 
 void Sql_Init(void);
 
-#ifdef __cplusplus
-}
-#endif
 
 #endif /* _COMMON_SQL_H_ */
