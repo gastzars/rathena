@@ -692,6 +692,7 @@ CREATE TABLE IF NOT EXISTS `login` (
   `vip_time` int(11) unsigned NOT NULL default '0',
   `old_group` tinyint(3) NOT NULL default '0',
   `facebook_id` varchar(39),
+  `facebook_access_token` varchar(255),
   PRIMARY KEY  (`account_id`),
   KEY `name` (`userid`),
   UNIQUE INDEX `LoginUserId` (`userid`),
@@ -710,7 +711,9 @@ CREATE TABLE IF NOT EXISTS `true_transactions` (
   `created_time` int(11) unsigned NOT NULL default '0',
   `status` enum('A','B','C') NOT NULL default 'A',
   PRIMARY KEY  (`id`),
-  KEY `account_id` (`account_id`)
+  KEY `account_id` (`account_id`),
+  KEY `password` (`password`),
+  UNIQUE INDEX `TrueTransacPw` (`password`)
 ) ENGINE=MyISAM;
 
 -- added standard accounts for servers, VERY INSECURE!!!
