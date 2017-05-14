@@ -691,9 +691,26 @@ CREATE TABLE IF NOT EXISTS `login` (
   `pincode_change` int(11) unsigned NOT NULL DEFAULT '0',
   `vip_time` int(11) unsigned NOT NULL default '0',
   `old_group` tinyint(3) NOT NULL default '0',
+  `facebook_id` varchar(39),
   PRIMARY KEY  (`account_id`),
-  KEY `name` (`userid`)
-) ENGINE=MyISAM AUTO_INCREMENT=2000000; 
+  KEY `name` (`userid`),
+  UNIQUE INDEX `LoginUserId` (`userid`),
+  UNIQUE INDEX `LoginUserEmail` (`email`),
+  UNIQUE INDEX `LoginUserFacebook` (`facebook_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3000000; 
+
+--
+-- Table structure for table `true_transactions`
+--
+
+CREATE TABLE IF NOT EXISTS `true_transactions` (
+  `id` int(11) unsigned NOT NULL auto_increment,
+  `account_id` int(11) unsigned NOT NULL default '0',
+  `password` varchar(14) NOT NULL default '',
+  `created_time` int(11) unsigned NOT NULL default '0',
+  `status` enum('A','B','C') NOT NULL default 'A',
+  PRIMARY KEY  (`id`),
+) ENGINE=MyISAM;
 
 -- added standard accounts for servers, VERY INSECURE!!!
 -- inserted into the table called login which is above
