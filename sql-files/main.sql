@@ -709,7 +709,7 @@ CREATE TABLE IF NOT EXISTS `true_transactions` (
   `password` varchar(14) NOT NULL default '',
   `created_time` int(11) unsigned NOT NULL default '0',
   `status` enum('A','B','C') NOT NULL default 'A',
-  PRIMARY KEY  (`id`),
+  PRIMARY KEY  (`id`)
 ) ENGINE=MyISAM;
 
 -- added standard accounts for servers, VERY INSECURE!!!
