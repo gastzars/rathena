@@ -1772,3 +1772,11 @@
 // Special Broadcast
 7782,16 //Gold_Key77
 7783,16 //Silver_Key77
+
+
+// === MY CUSTOM ===
+40010,2 //Siege White Potion Box
+40011,2 //Siege Blue Potion Box
+40013,2 // Season Event Box
+40014,2 //XM Hardcore Set Box
+

@@ -11771,3 +11771,22 @@
 31170,C_Wind_Wings,Costume Wings of Wind,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,493,{},{},{}
 31171,C_Nekomimi,Costume Nekomimi,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,182,{},{},{}
 31172,C_Roast_Memory,Costume Roast Memory,4,0,,0,,,,0,0xFFFFFFFF,63,2,7168,,1,0,1576,{},{},{}
+
+//=========================== MY CUSTOM ITEM ==========================
+// ID,AegisName,Name,Type,Buy,Sell,Weight,ATK[:MATK],DEF,Range,Slots,Job,Class,Gender,Loc,wLV,eLV[:maxLevel],Refineable,View,{ Script },{ OnEquip_Script },{ OnUnequip_Script }
+40000,WM_Bubble_Gum1,Bubble Gum,2,2,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ sc_start SC_ITEMBOOST,1800000,200; },{},{} // Free
+40001,WM_Bubble_Gum2,Bubble Gum,2,2,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ sc_start SC_ITEMBOOST,1800000,200; },{},{} 
+40002,WM_Bubble_Gum3,Bubble Gum,2,2,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ sc_start SC_ITEMBOOST,900000,500; },{},{}
+40003,WM_Bubble_Gum4,Bubble Gum,2,2,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ sc_start SC_ITEMBOOST,900000,1000; },{},{}
+40004,WM_Battle_Manual1,Battle Manual,2,2,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ sc_start SC_EXPBOOST,1800000,50; },{},{} // Free
+40005,WM_Battle_Manual2,Battle Manual,2,2,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ sc_start SC_EXPBOOST,1800000,50; },{},{}
+40006,WM_Battle_Manual3,Battle Manual,2,2,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ sc_start SC_EXPBOOST,1800000,300; },{},{}
+40007,WM_Battle_Manual4,Battle Manual,2,2,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ sc_start SC_EXPBOOST,1800000,500; },{},{}
+40008,WM_Woe_White_Potion,Siege White Potion,0,0,,1,,,,,0xFFFFFFFF,63,2,,,,,,{ percentheal 10,0; },{},{} // Free
+40009,WM_Woe_Blue_Potion,Siege Blue Potion,0,0,,1,,,,,0xFFFFFFFF,63,2,,,,,,{ percentheal 0,10; },{},{} // Free
+40010,WM_Sg_White_Potion_Box,Siege White Potion Box,2,20,,30,,,,,0xFFFFFFFF,63,2,,,,,,{ getitem 40008,30; },{},{} // Free
+40011,WM_Sg_Blue_Potion_Box,Siege Blue Potion Box,2,20,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ getitem 40009,10; },{},{} // Free
+40012,WM_Neuralizer,Neuralizer,11,2,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ callfunc "F_CashReset"; },{},{} // Free
+40013,WM_SS_Event_Box_1,Season 1 Event Box,2,20,,200,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{} // Free
+40014,WM_Hard_Core_Set_Box,XM Hardcore Set Box,18,20,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ getgroupitem(IG_WM_Hard_Core_Set_Box); },{},{} // Free
+40015,WM_Insurance,Life Insurance,2,2,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ sc_start SC_LIFEINSURANCE,1800000,0; },{},{} // Free

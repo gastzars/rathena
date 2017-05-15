@@ -4441,3 +4441,8 @@ IG_Shining_Blue_Lucky_Egg,14616,1,20,1,0 // 20x STR Biscuit Stick
 IG_Shining_Blue_Lucky_Egg,14617,1,20,1,0 // 20x VIT Biscuit Stick
 IG_Shining_Blue_Lucky_Egg,14619,1,20,1,0 // 20x INT Biscuit Stick
 IG_Shining_Blue_Lucky_Egg,14618,1,20,1,0 // 20x AGI Biscuit Stick
+
+// == MY CUSTOM ==
+IG_WM_Hard_Core_Set_Box,40004,0,10,0,0,0,1 // 10x Battle_Manual
+IG_WM_Hard_Core_Set_Box,40000,0,10,0,0,0,1 // 10x Bubble_Gum
+IG_WM_Hard_Core_Set_Box,40015,0,10,0,0,0,1 // 10x Insurance
