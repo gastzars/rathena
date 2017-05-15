@@ -11782,11 +11782,13 @@
 40005,WM_Battle_Manual2,Battle Manual,2,2,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ sc_start SC_EXPBOOST,1800000,50; },{},{}
 40006,WM_Battle_Manual3,Battle Manual,2,2,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ sc_start SC_EXPBOOST,1800000,300; },{},{}
 40007,WM_Battle_Manual4,Battle Manual,2,2,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ sc_start SC_EXPBOOST,1800000,500; },{},{}
-40008,WM_Woe_White_Potion,Siege White Potion,0,0,,1,,,,,0xFFFFFFFF,63,2,,,,,,{ percentheal 10,0; },{},{} // Free
-40009,WM_Woe_Blue_Potion,Siege Blue Potion,0,0,,1,,,,,0xFFFFFFFF,63,2,,,,,,{ percentheal 0,10; },{},{} // Free
-40010,WM_Sg_White_Potion_Box,Siege White Potion Box,2,20,,30,,,,,0xFFFFFFFF,63,2,,,,,,{ getitem 40008,30; },{},{} // Free
-40011,WM_Sg_Blue_Potion_Box,Siege Blue Potion Box,2,20,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ getitem 40009,10; },{},{} // Free
+40008,WM_Siege_White_Potion,WoE White Potion,0,0,,100,,,,,0xFFFFFFFF,63,2,,,,,,{ itemheal rand(400,500),0; },{},{} // Free
+40009,WM_Siege_Blue_Potion,WoE Blue Potion,0,0,,100,,,,,0xFFFFFFFF,63,2,,,,,,{ itemheal 0,rand(50,70); },{},{} // Free
+40010,WM_Sg_White_Potion_Box,Siege White Potion Box,2,20,,30,,,,,0xFFFFFFFF,63,2,,,,,,{ getitem 40008,100; },{},{} // Free
+40011,WM_Sg_Blue_Potion_Box,Siege Blue Potion Box,2,20,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ getitem 40009,50; },{},{} // Free
 40012,WM_Neuralizer,Neuralizer,11,2,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ callfunc "F_CashReset"; },{},{} // Free
 40013,WM_SS_Event_Box_1,Season 1 Event Box,2,20,,200,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{} // Free
 40014,WM_Hard_Core_Set_Box,XM Hardcore Set Box,18,20,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ getgroupitem(IG_WM_Hard_Core_Set_Box); },{},{} // Free
 40015,WM_Insurance,Life Insurance,2,2,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ sc_start SC_LIFEINSURANCE,1800000,0; },{},{} // Free
+40016,WM_Sg_White_Potion_Box2,Siege White Potion Box,2,20,,30,,,,,0xFFFFFFFF,63,2,,,,,,{ getitem 11503,100; },{},{}
+40017,WM_Sg_Blue_Potion_Box2,Siege Blue Potion Box,2,20,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ getitem 11504,50; },{},{}
