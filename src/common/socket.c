@@ -1775,7 +1775,7 @@ void gepard_config_read()
 		return;
 	}
 
-	fscanf(fp, "%u", &min_allowed_gepard_version);
+	if (fscanf(fp, "%u", &min_allowed_gepard_version)){};
 
 	fclose(fp);
 
@@ -1788,7 +1788,7 @@ void gepard_config_read()
 		return;
 	}
 
-	fscanf(fp, "%u", &allowed_gepard_grf_hash);
+	if (fscanf(fp, "%u", &allowed_gepard_grf_hash)){};
 
 	fclose(fp);
 }

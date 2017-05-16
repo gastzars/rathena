@@ -23026,9 +23026,9 @@ BUILDIN_FUNC(channel_delete) {
 
 BUILDIN_FUNC(get_unique_id)
 {
-        struct map_session_data* sd = script_rid2sd(st);
+	struct map_session_data *sd;
 
-        if (sd == NULL)
+        if (!script_rid2sd(sd))
         {
                 script_pushint(st, 0);
                 return SCRIPT_CMD_FAILURE;
