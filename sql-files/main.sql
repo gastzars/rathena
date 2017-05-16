@@ -1040,3 +1040,33 @@ CREATE TABLE IF NOT EXISTS `vendings` (
   `autotrade` tinyint(4) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM;
+
+
+--
+-- Gepard 
+--
+
+ALTER TABLE  `login` ADD  `last_unique_id` INT( 11 ) UNSIGNED NOT NULL DEFAULT  '0';
+
+ALTER TABLE  `login` ADD  `blocked_unique_id` INT( 11 ) UNSIGNED NOT NULL DEFAULT  '0';
+
+CREATE TABLE IF NOT EXISTS `gepard_block` (
+  `unique_id` int(11) unsigned NOT NULL DEFAULT '0',
+  `unban_time` datetime NOT NULL,
+  `reason` varchar(50) NOT NULL,
+  UNIQUE KEY `unique_id` (`unique_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `gepard_block_log` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `unique_id` int(11) unsigned NOT NULL DEFAULT '0',
+  `block_time` datetime NOT NULL,
+  `unban_time` datetime NOT NULL,
+  `violator_name` varchar(24) NOT NULL,
+  `violator_account_id` int(11) NOT NULL,
+  `initiator_name` varchar(24) NOT NULL,
+  `initiator_account_id` int(11) NOT NULL,
+  `reason` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
+

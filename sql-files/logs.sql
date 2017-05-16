@@ -107,6 +107,10 @@ CREATE TABLE IF NOT EXISTS `loginlog` (
   INDEX (`ip`)
 ) ENGINE=MyISAM ;
 
+-- Gepard
+ALTER TABLE `loginlog` ADD `unique_id` INT(11) UNSIGNED NOT NULL DEFAULT '0' AFTER `rcode`;
+-- Gepard
+
 --
 -- Table structure for table `mvplog`
 --
