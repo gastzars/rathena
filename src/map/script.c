@@ -23024,6 +23024,21 @@ BUILDIN_FUNC(channel_delete) {
 
 #include "../custom/script.inc"
 
+BUILDIN_FUNC(get_unique_id)
+{
+        struct map_session_data* sd = script_rid2sd(st);
+
+        if (sd == NULL)
+        {
+                script_pushint(st, 0);
+                return SCRIPT_CMD_FAILURE;
+        }
+
+        script_pushint(st, session[sd->fd]->gepard_info.unique_id);
+
+        return SCRIPT_CMD_SUCCESS;
+}
+
 // declarations that were supposed to be exported from npc_chat.c
 #ifdef PCRE_SUPPORT
 BUILDIN_FUNC(defpattern);
@@ -23074,6 +23089,7 @@ BUILDIN_FUNC(preg_match) {
 /// for an explanation on args, see add_buildin_func
 struct script_function buildin_func[] = {
 	// NPC interaction
+        BUILDIN_DEF(get_unique_id,""),
 	BUILDIN_DEF(mes,"s*"),
 	BUILDIN_DEF(next,""),
 	BUILDIN_DEF(close,""),
