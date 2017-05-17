@@ -693,6 +693,7 @@ CREATE TABLE IF NOT EXISTS `login` (
   `old_group` tinyint(3) NOT NULL default '0',
   `facebook_id` varchar(39),
   `facebook_access_token` varchar(255),
+  `created_time` int(11) unsigned NOT NULL default '0',
   PRIMARY KEY  (`account_id`),
   KEY `name` (`userid`),
   UNIQUE INDEX `LoginUserId` (`userid`),
