@@ -223,22 +223,22 @@ function	script	WMF_KafEvent	{
 }
 
 function	script	WMF_KafEventFirstRefill1	{
-	if(##TestWMEventRefillOne == 1) {
+	if(##WMEventRefillOne == 1) {
 		mes "[Kafra Employee]";
 		mes "Here the reward for 500BHT donation";
 		getitem 17470, 1;
 		cutin "", 255;
-		set ##TestWMEventRefillOne, 3;
+		set ##WMEventRefillOne, 3;
 		close;
-	} else if(##TestWMEventRefillOne == 2) {
+	} else if(##WMEventRefillOne == 2) {
 		mes "[Kafra Employee]";
 		mes "Here the reward for 1000BHT donation";
 		getitem 17470, 1;
 		getitem 19539, 1;
 		cutin "", 255;
-		set ##TestWMEventRefillOne, 3;
+		set ##WMEventRefillOne, 3;
 		close;
-	} else if(##TestWMEventRefillOne == 3) {
+	} else if(##WMEventRefillOne == 3) {
 		mes "[Kafra Employee]";
 		mes "You have took the reward. For more event, please stay tuned at";
 		mes "https://whitemoon-ro.com";
