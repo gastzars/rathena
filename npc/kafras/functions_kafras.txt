@@ -212,9 +212,11 @@ function	script	WMF_KafEvent	{
 	switch(select("LvL Champion:First Refill")) {
 		case 1:
 			callfunc "WMF_KafEventLvLChamp";
+			next;
 			break;
 		case 2:
 			callfunc "WMF_KafEventFirstRefill1";
+			next;
 			break;
 	}	
 }
@@ -256,12 +258,13 @@ function	script	WMF_KafEventLvLChamp	{
 		if(BaseLevel >= 99) {
 	        	if(TestWMEventChampReward != 1) {
 	                	set $TestWMEventChampCounter, $TestWMEventChampCounter+1;
+				set TestWMEventChampReward, 1;
 	                        mes "[Kafra Employee]";
 	                        mes "Congratulations !";
 				mes "You have win the reward";
 				mes "for being in 1 of 100";
-				mes "And, your place are ^4d4fff"+$TestWMEventChampCounter+"^000000";
-				announce "Lvl Champion : "+strcharinfo(0)+" has won the reward at "+$TestWMEventChampCounter+" place.",0;
+				mes "And, your place is ^4d4fff"+$TestWMEventChampCounter+"^000000";
+				announce "Lvl Champion : "+strcharinfo(0)+" had reach level 99 and win the reward at "+$TestWMEventChampCounter+"(th) place.",0;
 				if($TestWMEventChampCounter < 6) {
 					getitem 20302, 1;
 				} else if($TestWMEventChampCounter < 16) {
