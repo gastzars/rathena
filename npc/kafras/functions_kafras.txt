@@ -127,30 +127,30 @@ function	script	F_Kafra	{
 		deletearray @K_Menu0$[0],getarraysize(@K_Menu0$);
 		if (.@welcome == 2) {
 			// Guild Kafra Menu override (free Teleport, free Storage, Free Cart)
-			setarray @K_Menu0$[0],"Use Storage","Use Guild Storage","Rent a Pushcart","Use Teleport Service","Cancel";
+			setarray @K_Menu0$[0],"Use Storage","Use Guild Storage","Rent a Pushcart","Use Teleport Service","Event","Cancel";
 		} else {
 			switch(.@menu_num){
 				// Save and Storage only
-				case 1:	setarray @K_Menu0$[0],"Save","Use Storage","Cancel"; break;
+				case 1:	setarray @K_Menu0$[0],"Save","Use Storage","Event","Cancel"; break;
 				// Storage only
-				case 2:	setarray @K_Menu0$[0],"Use Storage","Cancel"; break;
+				case 2:	setarray @K_Menu0$[0],"Use Storage","Event","Cancel"; break;
 				// No Teleport (Common)
-				case 3: setarray @K_Menu0$[0],"Save","Use Storage","Rent a Pushcart","Check Other Information","Cancel"; break;
+				case 3: setarray @K_Menu0$[0],"Save","Use Storage","Rent a Pushcart","Check Other Information","Event","Cancel"; break;
 				// Case 4 is Einbroch no tele message.
 				// No save, or teleport. (Common)
-				case 5:	setarray @K_Menu0$[0],"Use Storage","Rent a Pushcart","Check Other Information","Cancel"; break;
+				case 5:	setarray @K_Menu0$[0],"Use Storage","Rent a Pushcart","Check Other Information","Event","Cancel"; break;
 				// Storage and Check Other Information only.
-				case 6:	setarray @K_Menu0$[0],"Use Storage","Check Other Information","Cancel"; break;
+				case 6:	setarray @K_Menu0$[0],"Use Storage","Check Other Information","Event","Cancel"; break;
 				// Save, Storage, and Pushcart only (Kafra Warehouse)
-				case 7:	setarray @K_Menu0$[0],"Save","Use Storage","Rent a Pushcart","Cancel"; break;
+				case 7:	setarray @K_Menu0$[0],"Save","Use Storage","Rent a Pushcart","Event","Cancel"; break;
 				// Save, Storage, Other Check information. (Turbo track)
-				case 8: setarray @K_Menu0$[0],"Save","Use Storage","Check Other Information","Cancel"; break;
+				case 8: setarray @K_Menu0$[0],"Save","Use Storage","Check Other Information","Event","Cancel"; break;
 				// No Save (Rune Knight)
-				case 9: setarray @K_Menu0$[0],"Use Storage","Rent a Pushcart","Use Teleport Service","Check Other Information","Cancel"; break;
+				case 9: setarray @K_Menu0$[0],"Use Storage","Rent a Pushcart","Use Teleport Service","Check Other Information","Event","Cancel"; break;
 				// Storage, Save, and Pushcart (Dewata, reorder of case 7)
-				case 10: setarray @K_Menu0$[0],"Use Storage","Save","Rent a Pushcart","Cancel"; break;
+				case 10: setarray @K_Menu0$[0],"Use Storage","Save","Rent a Pushcart","Event","Cancel"; break;
 				// Default message (obsolete)
-				default: setarray @K_Menu0$[0],"Save","Use Storage","Use Teleport Service","Rent a Pushcart","Check Other Information","Cancel"; break;
+				default: setarray @K_Menu0$[0],"Save","Use Storage","Use Teleport Service","Rent a Pushcart","Check Other Information","Event","Cancel"; break;
 			}
 		}
 		set .@menu$,"";
@@ -196,8 +196,39 @@ function	script	F_Kafra	{
 		} else if (@K_Menu0$[.@j] == "Use Guild Storage") {
 			callfunc "F_KafStor",1,0;
 			next;
+                } else if (@K_Menu0$[.@j] == "Event") {
+                        callfunc "WMF_KafEvent";
+                        next;
 		}
 	}
+}
+
+//===================================================
+// WM Event
+//===================================================
+function	script	WMF_KafEvent	{
+	mes "[Kafra Employee]";
+	mes "กรุณาเลือกกิจกรรมค่ะ";
+	switch(select("LvL Champion:First Refill")) {
+		case 1:
+			if(BaseLevel >= 99) {
+				if(WMEventChampReward != 1) {
+					set $WMEventChampCounter, $WMEventChampCounter+1;
+        	                        mes "[Kafra Employee]";
+	                                mes "ยินดีด้วยค่ะ คุณมารับรางวัลเป็นลำดับที่ "+$WMEventChampCounter+";
+					close;
+				} else {
+					close;
+				}
+			} else {
+				close;
+			}
+			break;
+		case 2:
+			mes "hi";
+			close;
+			break;
+	}	
 }
 
 //===================================================
