@@ -209,6 +209,7 @@ function	script	F_Kafra	{
 function	script	WMF_KafEvent	{
 	mes "[Kafra Employee]";
 	mes "Please select the Event";
+	next;
 	switch(select("LvL Champion:First Refill")) {
 		case 1:
 			callfunc "WMF_KafEventLvLChamp";
