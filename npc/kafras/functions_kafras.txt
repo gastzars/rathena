@@ -255,26 +255,26 @@ function	script	WMF_KafEventFirstRefill1	{
 }
 
 function	script	WMF_KafEventLvLChamp	{
-	if($TestWMEventChampCounter < 100) {
+	if($WMEventLvlChampCounter < 100) {
 		if(BaseLevel >= 99) {
-	        	if(TestWMEventChampReward != 1) {
-	                	set $TestWMEventChampCounter, $TestWMEventChampCounter+1;
-				set TestWMEventChampReward, 1;
+	        	if(WMEventLvlChampReward != 1) {
+	                	set $WMEventLvlChampCounter, $WMEventLvlChampCounter+1;
+				set WMEventLvlChampReward, 1;
 	                        mes "[Kafra Employee]";
 	                        mes "Congratulations !";
 				mes "You have win the reward";
 				mes "for being in 1 of 100";
-				mes "And, your place is ^4d4fff"+$TestWMEventChampCounter+"^000000";
-				announce "Lvl Champion : "+strcharinfo(0)+" had reach level 99 and win the reward at "+$TestWMEventChampCounter+"(th) place.",0;
-				if($TestWMEventChampCounter < 6) {
+				mes "And, your place is ^4d4fff"+$WMEventLvlChampCounter+"^000000";
+				announce "Lvl Champion : "+strcharinfo(0)+" had reach level 99 and win the reward at "+$WMEventLvlChampCounter+"(th) place.",0;
+				if($WMEventLvlChampCounter < 6) {
 					getitem 20302, 1;
-				} else if($TestWMEventChampCounter < 16) {
+				} else if($WMEventLvlChampCounter < 16) {
                                         getitem 20033, 1;
-				} else if($TestWMEventChampCounter < 31) {
+				} else if($WMEventLvlChampCounter < 31) {
                                         getitem 20135, 1;
-				} else if($TestWMEventChampCounter < 61) {
+				} else if($WMEventLvlChampCounter < 61) {
                                         getitem 19522, 1;
-				} else if($TestWMEventChampCounter < 101) {
+				} else if($WMEventLvlChampCounter < 101) {
                                         getitem 20136, 1;
 				}
 				cutin "", 255;
