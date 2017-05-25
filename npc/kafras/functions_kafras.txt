@@ -208,27 +208,96 @@ function	script	F_Kafra	{
 //===================================================
 function	script	WMF_KafEvent	{
 	mes "[Kafra Employee]";
-	mes "กรุณาเลือกกิจกรรมค่ะ";
+	mes "Please select the Event";
 	switch(select("LvL Champion:First Refill")) {
 		case 1:
-			if(BaseLevel >= 99) {
-				if(WMEventChampReward != 1) {
-					set $WMEventChampCounter, $WMEventChampCounter+1;
-        	                        mes "[Kafra Employee]";
-	                                mes "ยินดีด้วยค่ะ คุณมารับรางวัลเป็นลำดับที่ "+$WMEventChampCounter+";
-					close;
-				} else {
-					close;
-				}
-			} else {
-				close;
-			}
+			callfunc "WMF_KafEventLvLChamp";
 			break;
 		case 2:
-			mes "hi";
-			close;
+			callfunc "WMF_KafEventFirstRefill1";
 			break;
 	}	
+}
+
+function	script	WMF_KafEventFirstRefill1	{
+	if(TestWMEventRefillOne == 1) {
+		mes "[Kafra Employee]";
+		mes "Here the reward for 500BHT donation";
+		getitem 17470, 1;
+		cutin "", 255;
+		set TestWMEventRefillOne, 3;
+		close;
+	} else if(TestWMEventRefillOne == 2) {
+		mes "[Kafra Employee]";
+		mes "Here the reward for 1000BHT donation";
+		getitem 17470, 1;
+		getitem 19539, 1;
+		cutin "", 255;
+		set TestWMEventRefillOne, 3;
+		close;
+	} else if(TestWMEventRefillOne == 3) {
+		mes "[Kafra Employee]";
+		mes "You have took the reward. For more event, please stay tuned at";
+		mes "https://whitemoon-ro.com";
+		cutin "", 255;
+		close;
+	} else {
+		mes "[Kafra Employee]";
+		mes "You can not take reward";
+		mes "Please check the information at";
+		mes "https://whitemoon-ro.com";
+		cutin "", 255;
+		close;
+	}
+}
+
+function	script	WMF_KafEventLvLChamp	{
+	if($TestWMEventChampCounter < 100) {
+		if(BaseLevel >= 99) {
+	        	if(TestWMEventChampReward != 1) {
+	                	set $TestWMEventChampCounter, $TestWMEventChampCounter+1;
+	                        mes "[Kafra Employee]";
+	                        mes "Congratulations !";
+				mes "You have win the reward";
+				mes "for being in 1 of 100";
+				mes "And, your place are ^4d4fff"+$TestWMEventChampCounter+"^000000";
+				announce "Lvl Champion : "+strcharinfo(0)+" has won the reward at "+$TestWMEventChampCounter+" place.",0;
+				if($TestWMEventChampCounter < 6) {
+					getitem 20302, 1;
+				} else if($TestWMEventChampCounter < 16) {
+                                        getitem 20033, 1;
+				} else if($TestWMEventChampCounter < 31) {
+                                        getitem 20135, 1;
+				} else if($TestWMEventChampCounter < 61) {
+                                        getitem 19522, 1;
+				} else if($TestWMEventChampCounter < 101) {
+                                        getitem 20136, 1;
+				}
+				cutin "", 255;
+	                        close;
+	                } else {
+				mes "[Kafra Employee]";
+				mes "The reward is available once";
+				mes "per character. And, you already";
+				mes "took it";
+				cutin "", 255;
+	                        close;
+	                }
+	        } else {
+			mes "[Kafra Employee]";
+			mes "You need to be level 99 or higher";
+			mes "to take the reward";
+			cutin "", 255;
+	                close;
+	        }
+	} else {
+		mes "[Kafra Employee]";
+		mes "Right now, LvL Champion Event";
+		mes "has ended.";
+		cutin "", 255;
+		close;
+	}
+
 }
 
 //===================================================
