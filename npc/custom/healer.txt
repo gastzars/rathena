@@ -15,9 +15,9 @@
 
 -	script	Healer	-1,{
 
-	.@Price = 0;	// Zeny required for heal
-	.@Buffs = 0;	// Also buff players? (1: yes / 0: no)
-	.@Delay = 0;	// Heal delay, in seconds
+	.@Price = (BaseLevel*(BaseLevel/3));	// Zeny required for heal
+	.@Buffs = 1;	// Also buff players? (1: yes / 0: no)
+	.@Delay = 3;	// Heal delay, in seconds
 
 	if (@HD > gettimetick(2))
 		end;
@@ -33,9 +33,9 @@
 	percentheal 100,100;
 	if (.@Buffs) {
 		specialeffect2 EF_INCAGILITY;
-		sc_start SC_INCREASEAGI,240000,10;
+		sc_start SC_INCREASEAGI,240000,6;
 		specialeffect2 EF_BLESSING;
-		sc_start SC_BLESSING,240000,10;
+		sc_start SC_BLESSING,240000,6;
 	}
 	if (.@Delay)
 		@HD = gettimetick(2) + .@Delay;
