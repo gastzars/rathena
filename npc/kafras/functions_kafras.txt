@@ -256,6 +256,10 @@ function	script	WMF_KafEventFirstRefill1	{
 
 function	script	WMF_KafEventLvLChamp	{
 	if($WMEventLvlChampCounter < 100) {
+	        mes "[Kafra Employee]";
+	        mes "So far, we have got ^4d4fff"+$WMEventLvlChampCounter+"^000000 winners";
+	        mes "There is "+(100-$WMEventLvlChampCounter)+" more to go";
+		next;
 		if(BaseLevel >= 99) {
 	        	if(WMEventLvlChampReward != 1) {
 	                	set $WMEventLvlChampCounter, $WMEventLvlChampCounter+1;
