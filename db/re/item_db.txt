@@ -11780,8 +11780,8 @@
 40003,WM_Bubble_Gum4,Bubble Gum,2,2,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ sc_start SC_ITEMBOOST,900000,1000; },{},{}
 40004,WM_Battle_Manual1,Battle Manual,2,2,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ sc_start SC_EXPBOOST,1800000,50; },{},{} // Free
 40005,WM_Battle_Manual2,Battle Manual,2,2,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ sc_start SC_EXPBOOST,1800000,50; },{},{}
-40006,WM_Battle_Manual3,Battle Manual,2,2,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ sc_start SC_EXPBOOST,1800000,300; },{},{}
-40007,WM_Battle_Manual4,Battle Manual,2,2,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ sc_start SC_EXPBOOST,1800000,500; },{},{}
+40006,WM_Battle_Manual3,Battle Manual,2,2,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ sc_start SC_EXPBOOST,900000,300; },{},{}
+40007,WM_Battle_Manual4,Battle Manual,2,2,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ sc_start SC_EXPBOOST,900000,500; },{},{}
 40008,WM_Siege_White_Potion,WoE White Potion,0,0,,100,,,,,0xFFFFFFFF,63,2,,,,,,{ itemheal rand(400,500),0; },{},{} // Free
 40009,WM_Siege_Blue_Potion,WoE Blue Potion,0,0,,100,,,,,0xFFFFFFFF,63,2,,,,,,{ itemheal 0,rand(50,70); },{},{} // Free
 40010,WM_Sg_White_Potion_Box,Siege White Potion Box,2,20,,30,,,,,0xFFFFFFFF,63,2,,,,,,{ getitem 11503,100; },{},{} // Free
