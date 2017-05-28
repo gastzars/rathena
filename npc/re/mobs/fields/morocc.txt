@@ -21,17 +21,17 @@
 //==================================================
 // moc_fild01 - Sograt Desert 
 //==================================================
-moc_fild01,0,0	monster	Peco Peco	1019,130,5000
-moc_fild01,0,0	monster	Muka	1055,50,5000
-moc_fild01,0,0	monster	Peco Peco Egg	1047,20,5000
-moc_fild01,194,51,10,10	monster	Yellow Plant	1081,10,900000,450000
+moc_fild01,0,0	monster	Peco Peco	1019,228,5000
+moc_fild01,0,0	monster	Muka	1055,88,5000
+moc_fild01,0,0	monster	Peco Peco Egg	1047,35,5000
+moc_fild01,194,51,10,10	monster	Yellow Plant	1081,18,900000,450000
 
 //==================================================
 // moc_fild02 - Sograt Desert 
 //==================================================
-moc_fild02,0,0	monster	Muka	1055,130,5000
-moc_fild02,0,0	monster	Peco Peco	1019,60,5000
-moc_fild02,0,0	monster	Peco Peco Egg	1047,10,5000
+moc_fild02,0,0	monster	Muka	1055,228,5000
+moc_fild02,0,0	monster	Peco Peco	1019,105,5000
+moc_fild02,0,0	monster	Peco Peco Egg	1047,18,5000
 moc_fild02,89,315	monster	Yellow Plant	1081,1,180000,90000
 moc_fild02,99,261	monster	Yellow Plant	1081,1,180000,90000
 moc_fild02,94,195	monster	Yellow Plant	1081,1,180000,90000
@@ -50,9 +50,9 @@ moc_fild02,337,35	monster	Green Plant	1080,1,180000,90000
 //==================================================
 // moc_fild03 - Sograt Desert 
 //==================================================
-moc_fild03,0,0	monster	Wolf	1013,140,5000
-moc_fild03,0,0	monster	Argos	1100,20,5000
-moc_fild03,0,0	monster	Steel Chonchon	1042,20,5000
+moc_fild03,0,0	monster	Wolf	1013,245,5000
+moc_fild03,0,0	monster	Argos	1100,35,5000
+moc_fild03,0,0	monster	Steel Chonchon	1042,35,5000
 moc_fild03,77,311,5,5	monster	Green Plant	1080,2,180000,90000
 moc_fild03,108,199,5,5	monster	Green Plant	1080,2,180000,90000
 moc_fild03,96,65,5,5	monster	Green Plant	1080,2,180000,90000
@@ -76,12 +76,12 @@ moc_fild03,200,263,5,5	monster	Green Plant	1080,2,180000,90000
 //==================================================
 // moc_fild07 - Sograt Desert 
 //==================================================
-moc_fild07,0,0	monster	Drops	1113,140,5000
-moc_fild07,0,0	monster	Chonchon	1011,30,5000
-moc_fild07,0,0	monster	Picky	1050,15,5000
-moc_fild07,0,0	monster	Peco Peco Egg	1047,10,5000
-moc_fild07,0,0	monster	Picky	1049,10,5000
-moc_fild07,162,333,12,12	monster	Yellow Plant	1081,5,360000,180000
+moc_fild07,0,0	monster	Drops	1113,245,5000
+moc_fild07,0,0	monster	Chonchon	1011,53,5000
+moc_fild07,0,0	monster	Picky	1050,26,5000
+moc_fild07,0,0	monster	Peco Peco Egg	1047,18,5000
+moc_fild07,0,0	monster	Picky	1049,18,5000
+moc_fild07,162,333,12,12	monster	Yellow Plant	1081,9,360000,180000
 
 //==================================================
 // moc_fild08 - Disabled on Episode 12.1
@@ -98,28 +98,28 @@ moc_fild07,162,333,12,12	monster	Yellow Plant	1081,5,360000,180000
 //==================================================
 // moc_fild11 - Sograt Desert
 //==================================================
-moc_fild11,0,0	monster	Baby Desert Wolf	1107,140,5000
-moc_fild11,0,0	monster	Condor	1009,30,5000
-moc_fild11,0,0	monster	Scorpion	1001,30,5000
+moc_fild11,0,0	monster	Baby Desert Wolf	1107,245,5000
+moc_fild11,0,0	monster	Condor	1009,53,5000
+moc_fild11,0,0	monster	Scorpion	1001,53,5000
 
 //==================================================
 // moc_fild12 - Sograt Desert 
 //==================================================
-moc_fild12,0,0	monster	Picky	1049,50,5000
-moc_fild12,0,0	monster	Picky	1050,50,5000
-moc_fild12,0,0	monster	Peco Peco Egg	1047,35,5000
-moc_fild12,0,0	monster	Drops	1113,30,5000
-moc_fild12,0,0	monster	Condor	1009,30,5000
-moc_fild12,181,336,40,20	monster	Yellow Plant	1081,10,180000,90000
+moc_fild12,0,0	monster	Picky	1049,88,5000
+moc_fild12,0,0	monster	Picky	1050,88,5000
+moc_fild12,0,0	monster	Peco Peco Egg	1047,61,5000
+moc_fild12,0,0	monster	Drops	1113,53,5000
+moc_fild12,0,0	monster	Condor	1009,53,5000
+moc_fild12,181,336,40,20	monster	Yellow Plant	1081,18,180000,90000
 
 //==================================================
 // moc_fild13 - Sograt Desert 
 //==================================================
-moc_fild13,0,0	monster	Steel Chonchon	1042,140,5000
-moc_fild13,0,0	monster	Wolf	1013,15,5000
-moc_fild13,0,0	monster	Argos	1100,15,5000
-moc_fild13,0,0	monster	Metaller	1058,15,5000
-moc_fild13,0,0	monster	Magnolia	1138,15,5000
+moc_fild13,0,0	monster	Steel Chonchon	1042,245,5000
+moc_fild13,0,0	monster	Wolf	1013,26,5000
+moc_fild13,0,0	monster	Argos	1100,26,5000
+moc_fild13,0,0	monster	Metaller	1058,26,5000
+moc_fild13,0,0	monster	Magnolia	1138,26,5000
 moc_fild13,280,99	monster	Red Mushroom	1085,1,180000,90000
 moc_fild13,264,64	monster	Red Mushroom	1085,1,180000,90000
 moc_fild13,305,91	monster	Red Mushroom	1085,1,180000,90000
@@ -139,9 +139,9 @@ moc_fild13,101,297	monster	Yellow Plant	1081,1,180000,90000
 moc_fild13,89,92	monster	Yellow Plant	1081,1,180000,90000
 moc_fild13,108,150	monster	Yellow Plant	1081,1,180000,90000
 moc_fild13,109,168	monster	Yellow Plant	1081,1,180000,90000
-moc_fild13,101,185,5,5	monster	Yellow Plant	1081,3,180000,90000
-moc_fild13,106,258,5,5	monster	Yellow Plant	1081,3,180000,90000
-moc_fild13,161,273,5,5	monster	Yellow Plant	1081,3,180000,90000
+moc_fild13,101,185,5,5	monster	Yellow Plant	1081,5,180000,90000
+moc_fild13,106,258,5,5	monster	Yellow Plant	1081,5,180000,90000
+moc_fild13,161,273,5,5	monster	Yellow Plant	1081,5,180000,90000
 
 //==================================================
 // moc_fild14 - Disabled on Episode 12.1
@@ -154,16 +154,16 @@ moc_fild13,161,273,5,5	monster	Yellow Plant	1081,3,180000,90000
 //==================================================
 // moc_fild16 - Sograt Desert
 //==================================================
-moc_fild16,0,0	monster	Sandman	1165,130,5000
-moc_fild16,0,0	monster	Hode	1127,30,5000
-moc_fild16,0,0	monster	Frilldora	1119,10,5000
+moc_fild16,0,0	monster	Sandman	1165,228,5000
+moc_fild16,0,0	monster	Hode	1127,53,5000
+moc_fild16,0,0	monster	Frilldora	1119,18,5000
 
 //==================================================
 // moc_fild17 - Sograt Desert 
 //==================================================
-moc_fild17,0,0	monster	Hode	1127,130,5000
-moc_fild17,0,0	monster	Sandman	1165,30,5000
-moc_fild17,0,0	monster	Frilldora	1119,10,5000
+moc_fild17,0,0	monster	Hode	1127,228,5000
+moc_fild17,0,0	monster	Sandman	1165,53,5000
+moc_fild17,0,0	monster	Frilldora	1119,18,5000
 moc_fild17,0,0,0,0	boss_monster	Phreeoni	1159,1,7200000,600000,1
 moc_fild17,40,258	monster	Yellow Plant	1081,1,180000,90000
 moc_fild17,144,151	monster	Yellow Plant	1081,1,180000,90000
@@ -176,9 +176,9 @@ moc_fild17,359,258	monster	Yellow Plant	1081,1,180000,90000
 //==================================================
 // moc_fild18 - Sograt Desert
 //==================================================
-moc_fild18,0,0	monster	Scorpion	1001,140,5000
-moc_fild18,0,0	monster	Condor	1009,30,5000
-moc_fild18,0,0	monster	Baby Desert Wolf	1107,30,5000
+moc_fild18,0,0	monster	Scorpion	1001,245,5000
+moc_fild18,0,0	monster	Condor	1009,53,5000
+moc_fild18,0,0	monster	Baby Desert Wolf	1107,53,5000
 moc_fild18,0,0	monster	Dragon Fly	1091,1,3600000,1800000
 moc_fild18,143,352	monster	Yellow Plant	1081,1,180000,90000
 moc_fild18,72,333	monster	Yellow Plant	1081,1,180000,90000
@@ -204,16 +204,16 @@ moc_fild20,0,0	monster	Incarnation of Morroc	1921,1,30000
 //==================================================
 // moc_fild21 - Dimensional Gorge 
 //==================================================
-moc_fild21,0,0	monster	Incarnation of Morroc	1918,46,30000
-moc_fild21,0,0	monster	Incarnation of Morroc	1919,46,30000
-moc_fild21,0,0	monster	Incarnation of Morroc	1920,46,30000
-moc_fild21,0,0	monster	Incarnation of Morroc	1921,34,30000
+moc_fild21,0,0	monster	Incarnation of Morroc	1918,81,30000
+moc_fild21,0,0	monster	Incarnation of Morroc	1919,81,30000
+moc_fild21,0,0	monster	Incarnation of Morroc	1920,81,30000
+moc_fild21,0,0	monster	Incarnation of Morroc	1921,60,30000
 
 //==================================================
 // moc_fild22 - Dimensional Gorge 
 //==================================================
-moc_fild22,0,0	monster	Incarnation of Morroc	1918,60,30000
-moc_fild22,0,0	monster	Incarnation of Morroc	1919,60,30000
-moc_fild22,0,0	monster	Incarnation of Morroc	1920,60,30000
-moc_fild22,0,0	monster	Incarnation of Morroc	1921,25,10000
+moc_fild22,0,0	monster	Incarnation of Morroc	1918,105,30000
+moc_fild22,0,0	monster	Incarnation of Morroc	1919,105,30000
+moc_fild22,0,0	monster	Incarnation of Morroc	1920,105,30000
+moc_fild22,0,0	monster	Incarnation of Morroc	1921,44,10000
 moc_fild22,0,0,0,0	boss_monster	Wounded Morroc	1917,1,43200000,600000,0

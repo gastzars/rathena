@@ -16,42 +16,42 @@
 //==================================================
 // iz_dun00 - Undersea Tunnel
 //==================================================
-iz_dun00,0,0	monster	Plankton	1161,65,5000
-iz_dun00,0,0	monster	Marina	1141,45,5000
-iz_dun00,0,0	monster	Vadon	1066,15,5000
-iz_dun00,0,0	monster	Kukre	1070,15,5000
-iz_dun00,0,0	monster	Hydra	1068,15,5000
-iz_dun00,0,0	monster	Black Mushroom	1084,5,180000,90000
+iz_dun00,0,0	monster	Plankton	1161,114,5000
+iz_dun00,0,0	monster	Marina	1141,79,5000
+iz_dun00,0,0	monster	Vadon	1066,26,5000
+iz_dun00,0,0	monster	Kukre	1070,26,5000
+iz_dun00,0,0	monster	Hydra	1068,26,5000
+iz_dun00,0,0	monster	Black Mushroom	1084,9,180000,90000
 
 //==================================================
 // iz_dun01 - Undersea Tunnel
 //==================================================
-iz_dun01,0,0	monster	Vadon	1066,60,5000
-iz_dun01,0,0	monster	Kukre	1070,50,5000
-iz_dun01,0,0	monster	Hydra	1068,30,5000
-iz_dun01,0,0	monster	Marina	1141,15,5000
-iz_dun01,0,0	monster	Cornutus	1067,15,5000
-iz_dun01,0,0	monster	Plankton	1161,10,5000
-iz_dun01,0,0	monster	Black Mushroom	1084,10,180000,90000
+iz_dun01,0,0	monster	Vadon	1066,105,5000
+iz_dun01,0,0	monster	Kukre	1070,88,5000
+iz_dun01,0,0	monster	Hydra	1068,53,5000
+iz_dun01,0,0	monster	Marina	1141,26,5000
+iz_dun01,0,0	monster	Cornutus	1067,26,5000
+iz_dun01,0,0	monster	Plankton	1161,18,5000
+iz_dun01,0,0	monster	Black Mushroom	1084,18,180000,90000
 
 //==================================================
 // iz_dun02 - Undersea Tunnel
 //==================================================
-iz_dun02,0,0	monster	Cornutus	1067,60,5000
-iz_dun02,0,0	monster	Marse	1144,40,5000
-iz_dun02,0,0	monster	Obeaune	1044,40,5000
-iz_dun02,0,0	monster	Hydra	1068,40,5000
+iz_dun02,0,0	monster	Cornutus	1067,105,5000
+iz_dun02,0,0	monster	Marse	1144,70,5000
+iz_dun02,0,0	monster	Obeaune	1044,70,5000
+iz_dun02,0,0	monster	Hydra	1068,70,5000
 iz_dun02,0,0	monster	Merman	1264,1,5000
-iz_dun02,0,0	monster	Black Mushroom	1084,15,180000,90000
+iz_dun02,0,0	monster	Black Mushroom	1084,26,180000,90000
 
 //==================================================
 // iz_dun03 - Undersea Tunnel
 //==================================================
-iz_dun03,0,0	monster	Phen	1158,45,5000
-iz_dun03,0,0	monster	Marc	1045,40,5000
-iz_dun03,0,0	monster	Swordfish	1069,40,5000
-iz_dun03,0,0	monster	Marine Sphere	1142,20,5000
-iz_dun03,0,0	monster	Merman	1264,3,5000
+iz_dun03,0,0	monster	Phen	1158,79,5000
+iz_dun03,0,0	monster	Marc	1045,70,5000
+iz_dun03,0,0	monster	Swordfish	1069,70,5000
+iz_dun03,0,0	monster	Marine Sphere	1142,35,5000
+iz_dun03,0,0	monster	Merman	1264,5,5000
 iz_dun03,200,144	monster	Hydra	1068,1,282000,150000
 iz_dun03,178,253	monster	Hydra	1068,1,300000,150000
 iz_dun03,193,143	monster	Hydra	1068,1,300000,150000
@@ -86,11 +86,11 @@ iz_dun03,197,144	monster	Hydra	1068,1,2960000,150000
 //==================================================
 // iz_dun04 - Undersea Tunnel
 //==================================================
-iz_dun04,0,0	monster	Merman	1264,52,5000
-iz_dun04,0,0	monster	Strouf	1065,50,5000
-iz_dun04,0,0	monster	Marine Sphere	1142,10,5000
-iz_dun04,0,0	monster	Swordfish	1069,10,5000
-iz_dun04,0,0	monster	Deviace	1108,3,5000
+iz_dun04,0,0	monster	Merman	1264,91,5000
+iz_dun04,0,0	monster	Strouf	1065,88,5000
+iz_dun04,0,0	monster	Marine Sphere	1142,18,5000
+iz_dun04,0,0	monster	Swordfish	1069,18,5000
+iz_dun04,0,0	monster	Deviace	1108,5,5000
 iz_dun04,80,246	monster	Hydra	1068,1,294000,150000
 iz_dun04,79,246	monster	Hydra	1068,1,300000,150000
 iz_dun04,111,41	monster	Hydra	1068,1,300000,150000
@@ -113,8 +113,8 @@ iz_dun04,33,115	monster	Hydra	1068,1,321000,150000
 //==================================================
 // iz_dun05 - Undersea Tunnel F6
 //==================================================
-iz_dun05,0,0	monster	Sropho	2201,50,5000
-iz_dun05,0,0	monster	Sedora	2204,60,5000
-iz_dun05,0,0	monster	Pot Dofle	2203,30,5000
-iz_dun05,0,0	monster	King Dramoh	2198,25,5000
+iz_dun05,0,0	monster	Sropho	2201,88,5000
+iz_dun05,0,0	monster	Sedora	2204,105,5000
+iz_dun05,0,0	monster	Pot Dofle	2203,53,5000
+iz_dun05,0,0	monster	King Dramoh	2198,44,5000
 iz_dun05,0,0,0,0	boss_monster	Kraken	2202,1,7200000,1800000,0

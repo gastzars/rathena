@@ -14,11 +14,11 @@
 //==================================================
 // anthell01 - Ant Hell
 //==================================================
-anthell01,0,0	monster	Piere	1160,50,5000
-anthell01,0,0	monster	Deniro	1105,40,5000
-anthell01,0,0	monster	Familiar	1005,20,5000
-anthell01,0,0	monster	Andre	1095,15,5000
-anthell01,0,0	monster	Vitata	1176,10,5000
+anthell01,0,0	monster	Piere	1160,88,5000
+anthell01,0,0	monster	Deniro	1105,70,5000
+anthell01,0,0	monster	Familiar	1005,35,5000
+anthell01,0,0	monster	Andre	1095,26,5000
+anthell01,0,0	monster	Vitata	1176,18,5000
 anthell01,0,0	monster	Giearth	1121,1,5000
 anthell01,43,166	monster	Ant Egg	1097,1,60000,30000
 anthell01,30,187	monster	Ant Egg	1097,1,60000,30000
@@ -111,11 +111,11 @@ anthell01,31,186	monster	Ant Egg	1097,1,60000,30000
 //==================================================
 // anthell02 - Ant Hell
 //==================================================
-anthell02,0,0	monster	Andre	1095,50,5000
-anthell02,0,0	monster	Vitata	1176,30,5000
-anthell02,0,0	monster	Familiar	1005,20,5000
-anthell02,0,0	monster	Ant Egg	1097,15,5000
-anthell02,0,0	monster	Deniro	1105,15,5000
-anthell02,0,0	monster	Piere	1160,15,5000
-anthell02,0,0	monster	Giearth	1121,3,5000
+anthell02,0,0	monster	Andre	1095,88,5000
+anthell02,0,0	monster	Vitata	1176,53,5000
+anthell02,0,0	monster	Familiar	1005,35,5000
+anthell02,0,0	monster	Ant Egg	1097,26,5000
+anthell02,0,0	monster	Deniro	1105,26,5000
+anthell02,0,0	monster	Piere	1160,26,5000
+anthell02,0,0	monster	Giearth	1121,5,5000
 anthell02,0,0,0,0	boss_monster	Maya	1147,1,7200000,600000,1
