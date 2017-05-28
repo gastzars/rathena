@@ -15,7 +15,9 @@
 
 -	script	Healer	-1,{
 
-	.@Price = 0; //(BaseLevel*(BaseLevel/3));	// Zeny required for heal
+        if (BaseLevel >= 100) {
+                .@Price = (BaseLevel*(BaseLevel/5));    // Zeny required for heal
+        }
 	.@Buffs = 1;	// Also buff players? (1: yes / 0: no)
 	.@Delay = 3;	// Heal delay, in seconds
 
