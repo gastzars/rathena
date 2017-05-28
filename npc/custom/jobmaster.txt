@@ -16,25 +16,25 @@
 //= 1.4 Rebellion added.
 //============================================================
 
-prontera,153,193,6	script	Job Master	123,{
+izlude,114,161,6	script	Job Master	606,{
 function Job_Menu;
 
 	mes "[Job Master]";
 	if (Class > Job_Soul_Linker) {
-		mes "No more jobs are available.";
+		mes "ไม่มีอาชีพอื่นอีกแล้ว";
 		close;
 	}
 	if (checkfalcon() || checkcart() || checkriding() || ismounting()) {
-		mes "Please remove your " +
+		mes "ได้โปรดนำ " +
 			((checkfalcon()) ? "falcon" : "") +
 			((checkcart()) ? "cart" : "") +
 			((checkriding()) ? "Peco" : "") +
 			((ismounting()) ? "mount" : "") +
-			" before proceeding.";
+			" ก่อนทำรายการต่อ";
 		close;
 	}
 	if (.SkillPointCheck && SkillPoint) {
-		mes "Please use all your skill points before proceeding.";
+		mes "โปรดใช้ skill points ให้หมดก่อนดำเนินการต่อ";
 		close;
 	}
 
@@ -44,25 +44,25 @@ function Job_Menu;
 		if (BaseLevel < .Rebirth[0] || JobLevel < .Rebirth[1]) {
 			.@blvl = .Rebirth[0] - BaseLevel;
 			.@jlvl = .Rebirth[1] - JobLevel;
-			mes "You need " +
-				((.@blvl > 0) ? .@blvl + " more base levels " + ((.@jlvl > 0) ? "/ " : "") : "") +
-				((.@jlvl > 0) ? .@jlvl + " more job levels " : "") + "to continue.";
+			mes "เจ้าต้องการ " +
+				((.@blvl > 0) ? "base levels อีก " + .@blvl + ((.@jlvl > 0) ? "/ " : "") : "") +
+				((.@jlvl > 0) ? "job levels อีก " + .@jlvl : "") + " ในการดำเนินการต่อ";
 			close;
 		}
 		if (Class > Job_Crusader2) {
-			mes "Switch to third class?";
+			mes "เปลี่ยนเป็นคลาสสาม?";
 			next;
 			Job_Menu(roclass(.@eac|EAJL_THIRD));
 			close;
 		}
 		while(1) {
-			mes "Select an option.";
+			mes "โปรดเลือก";
 			next;
 			.@i = select(" ~ ^0055FFRebirth^000000:" + ((.ThirdClass) ? " ~ ^FF0000Third Class^000000" : "") + ": ~ ^777777Cancel^000000");
 			if (.@i == 3)
 				close;
 			mes "[Job Master]";
-			mes "Are you sure?";
+			mes "เจ้าแน่ใจใช่ไหม?";
 			next;
 			Job_Menu(((.@i == 1) ? Job_Novice_High : roclass(.@eac|EAJL_THIRD)));
 			mes "[Job Master]";
@@ -78,26 +78,26 @@ function Job_Menu;
 		if (BaseLevel < .Rebirth[0] || JobLevel < .@exp[1]) {
 			.@blvl = .Rebirth[0] - BaseLevel;
 			.@jlvl = .@exp[1] - JobLevel;
-			mes "You need " +
-				((.@blvl > 0) ? .@blvl + " more base levels " + ((.@jlvl > 0) ? "/ " : "") : "") +
-				((.@jlvl > 0) ? .@jlvl + " more job levels " : "") + "to continue.";
+			mes "เจ้าต้องการ " +
+				((.@blvl > 0) ? "base levels อีก " + .@blvl + ((.@jlvl > 0) ? "/ " : "") : "") +
+				((.@jlvl > 0) ? "job levels อีก " + .@jlvl : "") + " ในการดำเนินการต่อ";
 			close;
 		}
-		mes "Switch to " + jobname(.@exp[0]) + "?";
+		mes "เปลี่ยนอาชีพเป็น " + jobname(.@exp[0]) + "?";
 		next;
 		Job_Menu(.@exp[0]);
 		close;
 	}
 	if (.@eac&EAJL_2)
 		if ((.@eac&(EAJL_UPPER|EAJL_BABY)) || roclass(.@eac|EAJL_UPPER) == -1) {
-			mes "No more jobs are available.";
+			mes "ไม่มีอาชีพอื่นอีกแล้ว";
 			close;
 		}
 	if ((.@eac&EAJ_BASEMASK) == EAJ_NOVICE) {
 		if (JobLevel < .JobReq[0])
-			mes "A job level of " + .JobReq[0] + " is required to change into the 1st Class.";
+			mes "ต้องการ job level " + .JobReq[0] + " ในการเปลี่ยนอาชีพ 1st Class";
 		else if (Class == Job_Novice_High && .LastJob && lastJob) {
-			mes "Switch classes now?";
+			mes "เปลี่ยนอาชีพเลยไหม?";
 			next;
 			Job_Menu(roclass((eaclass(lastJob)&EAJ_BASEMASK)|EAJL_UPPER));
 		} else {
@@ -139,18 +139,18 @@ function Job_Menu;
 				);
 				break;
 			default:
-				mes "An error has occurred.";
+				mes "มีข้อผิดพลาดเกิดขึ้น";
 				break;
 			}
 		}
 		close;
 	}
 	if (roclass(.@eac|EAJL_2_1) == -1 || roclass(.@eac|EAJL_2_2) == -1)
-		mes "No more jobs are available.";
+		mes "ไม่มีอาชีพอื่นอีกแล้ว";
 	else if (!(.@eac&EAJL_2) && JobLevel < .JobReq[1])
-		mes "A job level of " + .JobReq[1] + " is required to change into the 2nd Class.";
+		mes "จะต้องมี job level " + .JobReq[1] + " ในการเปลี่ยนอาชีพ 2nd Class";
 	else if (.LastJob && lastJob && (.@eac&EAJL_UPPER)) {
-		mes "Switch classes now?";
+		mes "เปลี่ยนอาชีพเลยไหม?";
 		next;
 		Job_Menu(lastJob + Job_Novice_High);
 	} else
@@ -160,7 +160,7 @@ function Job_Menu;
 function Job_Menu {
 	while(1) {
 		if (getargcount() > 1) {
-			mes "Select a job.";
+			mes "โปรดเลือกอาชีพ";
 			.@menu$ = "";
 			for (.@i = 0; .@i < getargcount(); .@i++)
 				.@menu$ = .@menu$ + " ~ " + jobname(getarg(.@i)) + ":";
@@ -171,17 +171,17 @@ function Job_Menu {
 				close;
 			if ((.@i == Job_Super_Novice || .@i == Job_Super_Baby) && BaseLevel < .SNovice) {
 				mes "[Job Master]";
-				mes "A base level of " + .SNovice + " is required to turn into a " + jobname(.@i) + ".";
+				mes "ต้องการ base level " + .SNovice + " ในการเปลี่ยนอาชีพเป็น " + jobname(.@i);
 				close;
 			}
 			mes "[Job Master]";
-			mes "Are you sure?";
+			mes "เจ้าแน่ใจใช่ไหม?";
 			next;
 		} else
 			.@i = getarg(0);
-		if (select(" ~ Change into ^0055FF" + jobname(.@i) + "^000000 class: ~ ^777777" + ((getargcount() > 1) ? "Go back" : "Cancel") + "^000000") == 1) {
+		if (select(" ~ เปลี่ยนอาชีพเป็น ^0055FF" + jobname(.@i) + "^000000 class: ~ ^777777" + ((getargcount() > 1) ? "กลับ" : "ยกเลิก") + "^000000") == 1) {
 			mes "[Job Master]";
-			mes "You are now " + callfunc("F_InsertArticle", jobname(.@i)) + "!";
+			mes "ตอนนี้เจ้าเป็น " + callfunc("F_InsertArticle", jobname(.@i)) + "แล้ว!";
 			if (.@i == Job_Novice_High && .LastJob)
 				lastJob = Class;
 			jobchange .@i;
@@ -301,6 +301,6 @@ OnInit:
 	.SNovice = 45;				// Minimum base level to turn into Super Novice
 	.LastJob = 1;				// Enforce linear class changes? (1: yes / 0: no)
 	.SkillPointCheck = 1;		// Force player to use up all skill points? (1: yes / 0: no)
-	.Platinum = 1;				// Get platinum skills automatically? (1: yes / 0: no)
+	.Platinum = 0;				// Get platinum skills automatically? (1: yes / 0: no)
 	end;
 }
