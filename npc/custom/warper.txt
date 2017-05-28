@@ -23,13 +23,13 @@
 -	script	Warper	-1,{
 function Go; function Disp; function Pick; function Restrict;
 
-	.@Price = (BaseLevel*(BaseLevel/3));
-        if (.@Price) {
-                message strcharinfo(0), "Warping costs " + callfunc("F_InsertComma",.@Price) + " Zeny.";
-                if (Zeny < .@Price)
-                        end;
-                Zeny -= .@Price;
-        }
+	//.@Price = (BaseLevel*(BaseLevel/3));
+        //if (.@Price) {
+        //        message strcharinfo(0), "Warping costs " + callfunc("F_InsertComma",.@Price) + " Zeny.";
+        //        if (Zeny < .@Price)
+        //                end;
+        //        Zeny -= .@Price;
+        //}
 // --------------------------------------------------
 //	Main Menu:
 // --------------------------------------------------
@@ -68,7 +68,6 @@ menu	"Last Warp ^777777["+lastwarp$+"]^000000",-,
 // --------------------------------------------------
 
 function Go {
-	Zeny -= .@Price;
 	set lastwarp$, getarg(0);
 	set lastwarpx, getarg(1,0);
 	set lastwarpy, getarg(2,0);
