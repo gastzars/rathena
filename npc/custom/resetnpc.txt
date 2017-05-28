@@ -34,7 +34,7 @@ izlude,141,158,6	script	Reset General	10180,{
 	mes "ÍĞ ÎèÒ !";
 	sc_end SC_ALL;
 	ResetSkill;
-	ResetStatus
+	ResetStatus;
 	set reset_limit,reset_limit + 1;
 	close;
 }
