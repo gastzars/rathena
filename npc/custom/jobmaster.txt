@@ -16,7 +16,7 @@
 //= 1.4 Rebellion added.
 //============================================================
 
-izlude,114,161,6	script	Job Master	606,{
+izlude,141,162,6	script	Job Master	606,{
 function Job_Menu;
 
 	mes "[Job Master]";
