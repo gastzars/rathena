@@ -58,13 +58,13 @@ function Job_Menu;
 		while(1) {
 			mes "โปรดเลือก";
 			next;
-			.@i = select(" ~ ^0055FFRebirth^000000:" + ((.ThirdClass) ? " ~ ^FF0000Third Class^000000" : "") + ": ~ ^777777Cancel^000000");
-			if (.@i == 3)
+			.@i = select(" ~ ^0055FFRebirth^000000: ~ ^777777Cancel^000000");
+			if (.@i == 2)
 				close;
 			mes "[Job Master]";
 			mes "เจ้าแน่ใจใช่ไหม?";
 			next;
-			Job_Menu(((.@i == 1) ? Job_Novice_High : roclass(.@eac|EAJL_THIRD)));
+			Job_Menu(Job_Novice_High);
 			mes "[Job Master]";
 		}
 	}
