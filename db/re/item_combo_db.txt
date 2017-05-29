@@ -404,7 +404,7 @@
 5170:19024,{ .@r = getequiprefinerycnt(EQI_HEAD_TOP); if (.@r >= 7) bonus bAspdRate,5; if (.@r >= 9) bonus bMaxHPRate,5; }
 5176:18527,{ bonus bAspdRate,5; }
 5176:18656,{ bonus bAspd,1; autobonus "{ bonus bBaseAtk,50; }",20,10000,0,"{ specialeffect2 EF_POTION_BERSERK; }"; }
-//5184:5657,{ bonus bLongAtkRate,getrefine(); }
+5184:5657,{ bonus bLongAtkRate,getrefine(); }
 //5206:5768,{ bonus bDex,1; if(getequiprefinerycnt(EQI_HEAD_TOP) > 4) bonus bDelayRate,4-getequiprefinerycnt(EQI_HEAD_TOP); }
 5358:5653,{ bonus bAgi,1; bonus bFlee,3; }
 //5359:5657,{ bonus bLongAtkRate,getequiprefinerycnt(EQI_HEAD_TOP); }

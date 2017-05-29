@@ -318,12 +318,12 @@
 2761,507,100	// Satanic_Ring
 2762,507,100	// Dragoon_Ring
 2763,507,100	// Skul_Ring_C
-2766,499,100	// Swordman_Figure
-2767,499,100	// Acolyte_Figure
-2768,499,100	// Mage_Figure
-2769,499,100	// Archer_Figure
-2770,499,100	// Thief_Figure
-2771,499,100	// Merchant_Figure
+2766,1,100	// Swordman_Figure
+2767,1,100	// Acolyte_Figure
+2768,1,100	// Mage_Figure
+2769,1,100	// Archer_Figure
+2770,1,100	// Thief_Figure
+2771,1,100	// Merchant_Figure
 2772,499,100	// Krieger_Ring1
 2773,499,100	// Krieger_Ring2
 2774,499,100	// Krieger_Ring3
@@ -383,14 +383,14 @@
 2997,475,100	// RWC_Gold_Brooch
 2999,475,100	// RWC_Brooch
 5106,467,100	// Cone_Hat_INA
-5132,475,100	// Angeling_Hat
+5132,1,100	// Angeling_Hat
 5147,507,100	// Baseball_Cap
 5149,499,100	// Silver_Tiara
 5154,475,100	// Sunglasses_F
 5155,475,100	// Granpa_Beard_F
 5156,475,100	// Flu_Mask_F
 5179,499,100	// Gold_Tiara
-5254,475,100	// Deviling_Hat
+5254,1,100	// Deviling_Hat
 5265,507,100	// Apple_Of_Archer_C
 5266,507,100	// Bunny_Band_C
 5267,507,100	// Sahkkat_C
@@ -399,16 +399,16 @@
 5279,507,100	// Drooping_Kitty_C
 5280,507,100	// Magestic_Goat_C
 5281,507,100	// Deviruchi_Cap_C
-5286,507,100	// Pecopeco_Hairband
+5286,1,100	// Pecopeco_Hairband
 5288,507,100	// Red_Glasses
-5293,507,100	// Ramen_Hat
+5293,1,100	// Ramen_Hat
 5294,507,100	// Whisper_Mask
 5295,467,100	// Golden_Bandana
 5306,507,100	// Freyja_Crown
 5308,475,100	// Brazilian_Flag_Hat
 5309,475,100	// Mahican
 5314,507,100	// Hockey_Mask
-5315,507,100	// Observer
+5315,1,100	// Observer
 5318,467,100	// Poring_Party_Hat
 5320,475,100	// Champion_Wreath
 5322,475,100	// Scarf
@@ -419,11 +419,11 @@
 5329,507,100	// Dark_Blindfold_C
 5330,507,100	// kRO_Drooping_Kitty_C
 5331,507,100	// Corsair_C
-5336,507,100	// Guildsman_Recruiter
-5337,507,100	// Party_Recruiter_Hat
-5338,507,100	// Bf_Recruiter_Hat
-5339,507,100	// Friend_Recruiter_Hat
-5346,507,100	// Gf_Recruiter_Hat
+5336,1,100	// Guildsman_Recruiter
+5337,1,100	// Party_Recruiter_Hat
+5338,1,100	// Bf_Recruiter_Hat
+5339,1,100	// Friend_Recruiter_Hat
+5346,1,100	// Gf_Recruiter_Hat
 5357,475,100	// Wings_Of_Victory
 5368,475,100	// White_Wing
 5369,475,100	// Dark_Wing
@@ -432,7 +432,7 @@
 5406,467,100	// Academy_Freshman_Hat
 5407,467,100	// Academy_Graduating_Cap
 5408,507,100	// Old_Bandanna
-5410,499,100	// Bread_Bag2
+5410,1,100	// Bread_Bag2
 5412,467,100	// Sweet_Candy
 5413,467,100	// Popcorn_Hat
 5414,467,100	// Campfire_Hat
@@ -448,8 +448,8 @@
 5453,475,100	// Dragonhelm_Copper
 5460,499,100	// Adv_Dragon_Skull
 5461,499,100	// Adv_Whisper_Mask
-5462,507,100	// Spiked_Scarf
-5463,507,100	// Rainbow_Scarf
+5462,1,100	// Spiked_Scarf
+5463,1,100	// Rainbow_Scarf
 5479,1,100	// Shaman's_Hair_Ornament
 5480,1,100	// Bizofnil_Wing_Deco
 5481,1,100	// Hermose_Cap
@@ -465,7 +465,7 @@
 5577,1,100	// Dark_Knight_MaskB
 5583,499,100	// Para_Team_Hat1
 5587,499,100	// Mosquito_Coil_1Use
-5592,475,100	// Sigrun's_Wings
+5592,1,100	// Sigrun's_Wings
 5596,507,100	// 4Leaf_Clover_In_Mouth
 5597,507,100	// Bubble_Gum_In_Mouth
 5603,475,100	// RTC_Winner_Only
@@ -706,7 +706,7 @@
 6412,507,100	// Special_Medal
 6415,507,100	// Strange_Embryo
 6416,499,100	// Pet_Exchange
-6417,475,100	// Silvervine
+6417,1,100	// Silvervine
 6418,499,100	// Agrade_Coin
 6419,499,100	// Bgrade_Coin
 6420,499,100	// Cgrade_Coin
@@ -1527,9 +1527,9 @@
 12906,475,100	// Dex_Dish_Box
 12907,475,100	// Luk_Dish_Box
 12908,475,100	// Vit_Dish_Box
-12909,475,100	// Kafra_Card_Box
+12909,1,100	// Kafra_Card_Box
 12910,475,100	// Giant_Fly_Wing_Box
-12911,475,100	// Neuralizer_Box
+12911,1,100	// Neuralizer_Box
 12912,475,100	// Convex_Mirror_Box
 12913,475,100	// Blessing_10_Scroll_Box
 12914,475,100	// Inc_Agi_10_Scroll_Box
@@ -1612,8 +1612,8 @@
 12994,475,100	// Pet_Egg_Scroll11
 12995,475,100	// White_Herb_Box
 12996,475,100	// Blue_Herb_Box
-12997,475,100	// Elunium_Box
-12998,475,100	// Oridecon_Box
+12997,1,100	// Elunium_Box
+12998,1,100	// Oridecon_Box
 12999,475,100	// Branch_Of_Dead_Tree_Box
 13020,507,100	// Warrior_Balmung_
 13021,507,100	// Combat_Knife_C
@@ -1698,7 +1698,7 @@
 13425,499,100	// Tourist_Sword
 13434,499,100	// P_Saber3
 13439,499,100	// TE_Woe_Sword
-13500,475,100	// Insurance60_Package
+13500,1,100	// Insurance60_Package
 13501,475,100	// Assorted_Scroll_Box
 13502,475,100	// Drooping_Kitty_Box
 13503,475,100	// Magestic_Goat_Box
@@ -1857,11 +1857,11 @@
 13656,475,100	// Diary_Of_Sage_Box1
 13657,475,100	// Asura_Box1
 13658,475,100	// Apple_Of_Archer_Box1
-13659,475,100	// Bunny_Band_Box1
-13660,475,100	// Sahkkat_Box1
+13659,1,100	// Bunny_Band_Box1
+13660,1,100	// Sahkkat_Box1
 13661,475,100	// Lord_Circlet_Box1
 13662,475,100	// Elven_Ears_Box1
-13663,475,100	// Steel_Flower_Box1
+13663,1,100	// Steel_Flower_Box1
 13664,475,100	// Critical_Ring_Box1
 13665,475,100	// Earring_Box1
 13666,475,100	// Ring_Box1
@@ -1916,7 +1916,7 @@
 13714,475,100	// Med_Life_Potion_Box
 13715,475,100	// Med_Life_Potion_Box30
 13716,475,100	// Med_Life_Potion_Box50
-13717,475,100	// Abrasive_Box5
+13717,1,100	// Abrasive_Box5
 13718,475,100	// Abrasive_Box10
 13719,475,100	// Regeneration_Box5
 13720,475,100	// Regeneration_Box10
@@ -1935,8 +1935,8 @@
 13735,475,100	// Red_Glasses_Box1
 13736,475,100	// Whisper_Mask_Box1
 13737,475,100	// Ramen_Hat_Box1
-13738,475,100	// Glass_Of_Illusion_Box5
-13739,475,100	// Glass_Of_Illusion_Box10
+13738,1,100	// Glass_Of_Illusion_Box5
+13739,1,100	// Glass_Of_Illusion_Box10
 13740,475,100	// Shadow_Armor_S_Box5
 13741,475,100	// Shadow_Armor_S_Box10
 13742,475,100	// Shadow_Armor_S_Box30
@@ -1958,7 +1958,7 @@
 13758,475,100	// Battle_Manual_X3_Box
 13759,475,100	// In_Blue_Herb_Box
 13760,475,100	// Honey_Box
-13761,475,100	// Empty_Bottle_Box
+13761,1,100	// Empty_Bottle_Box
 13762,475,100	// In_Royal_Jelly_Box
 13763,507,100	// 5_Anniversary_Coin_Box
 13764,475,100	// Battle_Manual_Box_TW
@@ -1974,10 +1974,10 @@
 13774,475,100	// Immaterial_Sword_Box
 13775,475,100	// Unholy_Touch_Box
 13776,475,100	// Cloak_Of_Survival_Box
-13777,475,100	// Masquerade_Box
+13777,1,100	// Masquerade_Box
 13778,475,100	// Orc_Hero_Helm_Box
 13779,475,100	// Evil_Wing_Ears_Box
-13780,475,100	// Dark_Blindfold_Box
+13780,1,100	// Dark_Blindfold_Box
 13781,475,100	// kRO_Drooping_Kitty_Box
 13782,475,100	// Corsair_Box
 13783,475,100	// Bloody_Iron_Ball_Box
@@ -2066,7 +2066,7 @@
 13867,475,100	// Neko_Mimi_Box
 13868,475,100	// MFH_Box
 13869,475,100	// Chick_Hat_Box
-13870,475,100	// New_Style_Box
+13870,1,100	// New_Style_Box
 13871,475,100	// Magician_Card_Box
 13872,475,100	// Acolyte_Card_Box
 13873,475,100	// Archer_Card_Box
@@ -2087,10 +2087,10 @@
 13888,475,100	// Chaos_Card_Box
 13889,475,100	// Elunium_Box_
 13890,475,100	// Oridecon_Box_
-13891,475,100	// Fire_Converter_Box
-13892,475,100	// Water_Converter_Box
-13893,475,100	// Wind_Converter_Box
-13894,475,100	// Earth_Converter_Box
+13891,1,100	// Fire_Converter_Box
+13892,1,100	// Water_Converter_Box
+13893,1,100	// Wind_Converter_Box
+13894,1,100	// Earth_Converter_Box
 13895,475,100	// Starter_Pack
 13896,475,100	// Mimic_Summon_Box5
 13897,475,100	// Disguise_Summon_Box5
@@ -2101,7 +2101,7 @@
 13902,475,100	// Fish_Head_Hat_Box
 13903,475,100	// Santa_Poring_Hat_Box
 13904,475,100	// Bell_Ribbon_Box
-13905,475,100	// Hard_Core_Set_Box
+13905,1,100	// Hard_Core_Set_Box
 13906,475,100	// Kitty_Set_Box
 13907,475,100	// Soft_Core_Set_Box
 13908,475,100	// Deviruchi_Set_Box
@@ -2150,7 +2150,7 @@
 13950,475,100	// Br_ThiefPackage
 13951,475,100	// Wasteland_Outlaw_Box
 13952,475,100	// Lever_Action_Rifle_Box
-13953,475,100	// All_In_One_Ring_Box
+13953,1,100	// All_In_One_Ring_Box
 13954,475,100	// Spiritual_Tunic_Box
 13955,475,100	// Recuperative_Armor_Box
 13956,475,100	// Shelter_Resistance_Box
@@ -2186,7 +2186,7 @@
 13986,475,100	// Bulging_Head_Box_1m
 13987,475,100	// Ori_Stone_5_Box
 13988,475,100	// Ori_Stone_50_Box
-13989,475,100	// Acidbomb_10_Box
+13989,1,100	// Acidbomb_10_Box
 13990,475,100	// Job_Manual50_Box
 13991,475,100	// Tiger_Mask_Box
 13992,475,100	// Cat_Hat_Box
@@ -2201,7 +2201,7 @@
 14001,475,100	// Basic_Siege_Supply_Box
 14002,475,100	// Adv_Siege_Supply_Box
 14003,475,100	// Elite_Siege_Supply_Box
-14004,475,100	// Poison_Bottle_10_Box
+14004,1,100	// Poison_Bottle_10_Box
 14005,475,100	// Poison_Bottle_5_Box
 14006,475,100	// F_Drooping_W_Kitty_Box
 14007,475,100	// F_Rabbit_Ear_Hat_Box
@@ -2439,16 +2439,16 @@
 14239,475,100	// Dragon_Breath_Cocktail_Box_20
 14240,475,100	// Hwergelmir's_Tonic_Box_20
 14241,475,100	// Nine_Tail_Dish_Box_20
-14242,475,100	// Beholder_Ring_Box
-14243,475,100	// Hallow_Ring_Box
-14244,475,100	// Clamorous_Ring_Box
-14245,475,100	// Chemical_Ring_Box
-14246,475,100	// Insecticide_Ring_Box
-14247,475,100	// Fisher_Ring_Box
-14248,475,100	// Decussate_Ring_Box
-14249,475,100	// Bloody_Ring_Box
-14250,475,100	// Satanic_Ring_Box
-14251,475,100	// Dragoon_Ring_Box
+14242,1,100	// Beholder_Ring_Box
+14243,1,100	// Hallow_Ring_Box
+14244,1,100	// Clamorous_Ring_Box
+14245,1,100	// Chemical_Ring_Box
+14246,1,100	// Insecticide_Ring_Box
+14247,1,100	// Fisher_Ring_Box
+14248,1,100	// Decussate_Ring_Box
+14249,1,100	// Bloody_Ring_Box
+14250,1,100	// Satanic_Ring_Box
+14251,1,100	// Dragoon_Ring_Box
 14252,475,100	// Beholder_Ring_Box2
 14253,475,100	// Hallow_Ring_Box2
 14254,475,100	// Clamorous_Ring_Box2
@@ -2486,8 +2486,8 @@
 14286,475,100	// Skull_Ring_Box
 14287,475,100	// Baricade_Repair_Kit
 14288,475,100	// Guardian_Stone_Repair_Kit
-14289,475,100	// Cloth_Dye_Coupon_Box
-14290,475,100	// Cloth_Dye_Coupon2_Box
+14289,1,100	// Cloth_Dye_Coupon_Box
+14290,1,100	// Cloth_Dye_Coupon2_Box
 14291,475,100	// Cloth_Dye_Coupon3_Box
 14292,475,100	// Cloth_Dye_Coupon4_Box
 14293,475,100	// Mercenary_Contract_Box
@@ -3452,7 +3452,7 @@
 17118,475,100	// ASPD_Potion_Box10
 17122,475,100	// Immuned_Shield_Box
 17123,475,100	// Black_Devil_Mask_Box
-17126,475,100	// ASPD_Potion_Box10_2
+17126,1,100	// ASPD_Potion_Box10_2
 //17135,475,100	//
 //17136,475,100	//
 //17137,475,100	//
@@ -3881,13 +3881,13 @@
 // === MY CUSTOM ===
 18742,1,100
 40000,451,100
-40001,451,100
-40002,451,100
-40003,451,100
+40001,1,100
+40002,1,100
+40003,1,100
 40004,451,100
-40005,451,100
-40006,451,100
-40007,451,100
+40005,1,100
+40006,1,100
+40007,1,100
 40008,451,100
 40009,451,100
 40010,451,100
