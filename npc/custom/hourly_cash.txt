@@ -1,0 +1,40 @@
+-	script	hourlypoints	-1,{
+OnPCLoginEvent:
+	if (query_sql("SELECT `char`.`name` FROM `char` LEFT JOIN login ON `char`.account_id=login.account_id WHERE login.last_ip='"+getcharip()+"' AND `char`.online=1 AND `char`.char_id!="+getcharid(0), .@name$) >= 2) {
+		for (set .@i,0; .@i<getarraysize(.@name$); set .@i,.@i+1) {
+			if (checkvending(.@name$[.@i]) != 2)
+				set .@sameip, .@sameip +1;
+		}
+		if (.@sameip >= 2) {
+			message strcharinfo(0), "มีตัวละครของผู้เล่นทำการ Login อยู่ "+.@sameip+" ตัวละคร ใน IP เดียวกัน การเริ่มต้นระบบออนไลน์รับ Cash points ล้มเหลว";
+			announce "หากท่านพบว่ามีตัวละครที่ไม่ได้อยู่ในระบบออนไลน์รับ Cashpoints ครบ 2 ตัวละคร โปรดเลือกตัวละครและจัดเรียงลำดับการเข้าเกมใหม่", bc_self;
+			addtimer 2000,"hourlypoints::OnSecondAnnounce";
+			end;
+		}
+	}
+	message strcharinfo(0), "ระบบออนไลน์รับ Cash points ได้เริ่มต้น";
+	addtimer .timer,"hourlypoints::OnPointGet";
+	end;
+OnSecondAnnounce:
+	announce "หากในกรณีที่ไม่ได้รับรางวัลจากระบบ จะไม่สามารถเรียกร้องค่าชดเชยใดๆได้", bc_self;
+	end;
+OnPointGet:
+	if (checkvending() == 2) end;
+	set #CASHPOINTS, #CASHPOINTS + .point_amt;
+	set @consecutive_hour, @consecutive_hour + 1;
+
+	//Check for 10 hours consecutive
+	if(@consecutive_hour == 300) {
+		set @consecutive_hour,0;
+		set #CASHPOINTS, #CASHPOINTS + .cpoint_amt;
+		message strcharinfo(0), "ท่านได้รับ "+.cpoint_amt+" Cashpoints จากการออนไลน์ติดต่อกัน 10 ชั่วโมง";
+		dispbottom "Cash Points ปัจจุบันของท่าน = "+#CASHPOINTS+" pt";
+	}
+	addtimer .timer,"hourlypoints::OnPointGet";
+	end;
+OnInit:
+	set .timer, 120000; //Timer in milliseconds.
+	set .cpoint_amt, 100; //Points gained for consecutive time online.
+	set .point_amt, 2; //Normal points gained.
+	set .delay, 1000; //Delay for idle re-check check.
+}
