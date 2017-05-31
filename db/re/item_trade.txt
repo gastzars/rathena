@@ -642,8 +642,8 @@
 6237,507,100	// Guarana_Fruit
 6238,475,100	// Guarantee_Weapon_11Up
 6239,475,100	// Guarantee_Armor_11Up
-6240,475,100	// HD_Oridecon
-6241,475,100	// HD_Elunium
+//6240,475,100	// HD_Oridecon
+//6241,475,100	// HD_Elunium
 6242,9,100	// Midgard_Coin
 6266,507,100	// Cheat_Key
 6267,507,100	// Virtual_Key

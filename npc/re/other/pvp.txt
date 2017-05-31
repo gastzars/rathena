@@ -91,3 +91,13 @@ OnInit:
 	waitingroom "Free for all",0;
 	end;
 }
+
+izlude,119,153,3      script  Fight Square Reception#wmcustompvp        105,{
+        callfunc "F_PVP_FSRS";
+        end;
+
+OnInit:
+        waitingroom "PVP",0;
+        end;
+}
+

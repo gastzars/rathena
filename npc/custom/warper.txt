@@ -38,7 +38,8 @@ function Go; function Disp; function Pick; function Restrict;
 menu	"Last Warp ^777777["+lastwarp$+"]^000000",-,
     	"Towns",Towns,
 	"Fields",Fields,
-    	"Dungeons",Dungeons;
+    	"Dungeons",Dungeons,
+	"Guild Dungeons",Guild_Dungeons;
 
 	if (lastwarp$ == "")
 		message strcharinfo(0),"You haven't warped anywhere yet.";
