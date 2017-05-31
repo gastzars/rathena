@@ -20,15 +20,15 @@ OnSecondAnnounce:
 	end;
 OnPointGet:
 	if (checkvending() == 2) end;
-	set #CASHPOINTS, #CASHPOINTS + .point_amt;
+	set #KAFRAPOINTS, #KAFRAPOINTS + .point_amt;
 	set @consecutive_hour, @consecutive_hour + 1;
 
 	//Check for 10 hours consecutive
 	if(@consecutive_hour == 300) {
 		set @consecutive_hour,0;
-		set #CASHPOINTS, #CASHPOINTS + .cpoint_amt;
+		set #KAFRAPOINTS, #KAFRAPOINTS + .cpoint_amt;
 		message strcharinfo(0), "ท่านได้รับ "+.cpoint_amt+" Cashpoints จากการออนไลน์ติดต่อกัน 10 ชั่วโมง";
-		dispbottom "Cash Points ปัจจุบันของท่าน = "+#CASHPOINTS+" pt";
+		dispbottom "Cash Points ปัจจุบันของท่าน = "+#KAFRAPOINTS+" pt";
 	}
 	addtimer .timer,"hourlypoints::OnPointGet";
 	end;
