@@ -92,7 +92,7 @@ OnInit:
 	end;
 }
 
-izlude,119,153,3      script  Fight Square Reception#wmcustompvp        105,{
+izlude,119,153,3	script	Fight Square Reception#wmcustompvp	105,{
         callfunc "F_PVP_FSRS";
         end;
 
