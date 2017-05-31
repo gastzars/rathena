@@ -628,8 +628,8 @@
 6208,499,100	// I_Respect_You
 6218,507,100	// Disin_Delivery_Box
 6219,507,100	// Para_Team_Mark
-6225,475,100	// HD_Carnium
-6226,475,100	// HD_Bradium
+//6225,475,100	// HD_Carnium
+//6226,475,100	// HD_Bradium
 6228,475,100	// Guarantee_Weapon_9Up
 6229,475,100	// Guarantee_Weapon_8Up
 6230,475,100	// Guarantee_Weapon_7Up
