@@ -1054,8 +1054,8 @@
 7603,499,100	// RO_Party_Ticket
 7614,499,100	// Special_Packing_Paper
 7618,499,100	// Monster_Crystal
-7619,475,100	// Enriched_Elunium
-7620,475,100	// Enriched_Oridecon
+//7619,475,100	// Enriched_Elunium
+//7620,475,100	// Enriched_Oridecon
 7621,475,100	// Token_Of_Siegfried
 7622,475,100	// New_Style_Coupon
 7623,507,100	// Name_Change_Coupon
