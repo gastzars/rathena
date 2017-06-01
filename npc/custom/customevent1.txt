@@ -4,7 +4,7 @@ izlude,128,152,4	script	Season Machine	564,{
 	mes "^000080+5,+6,+7,+8 Weapon Refine Ticket";
 	mes "+5,+6,+7,+8 Armor Refine Ticket";
 	mes "Blessed Elu, Blessed Ori";
-	mes "Enriched Elu, Enriched Ori";
+	mes "Enriched Elu, Enriched Ori^000000";
 	next;
 	if (wm_ss_event_1 == 0) {
 		mes "[Season Machine]";
@@ -544,6 +544,7 @@ izlude,128,152,4	script	Season Machine	564,{
 		mes "[Season Machine]";
 		mes "ภารกิจของท่านคือการสะสม";
 		mes "ไอเทม "+wm_ss_event_target_name$+" : "+wm_ss_event_target_amount+" ชิ้น";
+		mes "Item ID : "+wm_ss_event_target;
 		mes "และเงิน 2,000,000 zeny";
 		next;
 		mes "[Season Machine]";
@@ -554,6 +555,7 @@ izlude,128,152,4	script	Season Machine	564,{
 		mes "[Season Machine]";
 		mes "ภารกิจของท่านคือการสะสม";
 		mes "ไอเทม "+wm_ss_event_target_name$+" : "+wm_ss_event_target_amount+" ชิ้น";
+		mes "Item ID : "+wm_ss_event_target;
 		mes "และเงิน 2,000,000 zeny";
 		next;
 		switch(select("รับรางวัล:ยกเลิกภารกิจ (100,000z):ยกเลิก"))
@@ -574,6 +576,7 @@ izlude,128,152,4	script	Season Machine	564,{
 					mes "[Season Machine]";
 					mes "ภารกิจของท่านคือการสะสม";
 					mes "ไอเทม "+wm_ss_event_target_name$+" : "+wm_ss_event_target_amount+" ชิ้น";
+					mes "Item ID : "+wm_ss_event_target;
 					mes "และเงิน 2,000,000 zeny";
 					close;
 				}
@@ -594,4 +597,43 @@ izlude,128,152,4	script	Season Machine	564,{
 OnInit:
 	waitingroom "Collecting Event",0;
 	end;
+}
+
+function	script	CustomWMSS1Rand	{
+	switch(rand(1,36)){
+		case 1: getitem 6456; break;
+		case 2: getitem 6457; break;
+                case 3: getitem 6456; break;
+                case 4: getitem 6457; break;
+                case 5: getitem 6231; break;
+                case 6: getitem 6231; break;
+                case 7: getitem 6231; break;
+                case 10: getitem 6456; break;
+                case 11: getitem 6457; break;
+                case 12: getitem 6235; break;
+                case 13: getitem 6235; break;
+                case 14: getitem 6235; break;
+                case 15: getitem 6230; break;
+                case 16: getitem 6230; break;
+                case 17: getitem 6234; break;
+                case 18: getitem 6234; break;
+                case 19: getitem 6229; break;
+                case 20: getitem 6233; break;
+                case 21: getitem 6438; break;
+                case 22: getitem 6439; break;
+                case 23: getitem 6438; break;
+                case 24: getitem 6439; break;
+                case 25: getitem 7619,rand(5,9); break;
+                case 26: getitem 7619,rand(5,9); break;
+                case 27: getitem 7619,rand(5,9); break;
+                case 28: getitem 7619,rand(5,9); break;
+                case 29: getitem 7619,rand(5,9); break;
+                case 30: getitem 7619,rand(5,9); break;
+                case 31: getitem 7620,rand(5,9); break;
+                case 32: getitem 7620,rand(5,9); break;
+                case 33: getitem 7620,rand(5,9); break;
+                case 34: getitem 7620,rand(5,9); break;
+                case 35: getitem 7620,rand(5,9); break;
+                case 36: getitem 7620,rand(5,9); break;
+	}
 }

@@ -11787,7 +11787,7 @@
 40010,WM_Sg_White_Potion_Box,Siege White Potion Box,2,20,,30,,,,,0xFFFFFFFF,63,2,,,,,,{ getitem 11503,100; },{},{} // Free
 40011,WM_Sg_Blue_Potion_Box,Siege Blue Potion Box,2,20,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ getitem 11504,50; },{},{} // Free
 40012,WM_Neuralizer,Neuralizer,11,2,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ callfunc "F_CashReset"; },{},{} // Free
-40013,WM_SS_Event_Box_1,Season 1 Event Box,2,20,,200,,,,,0xFFFFFFFF,63,2,,,,,,{ getitem callfunc("F_Rand",2202,2217,2231),1; },{},{} // Free
+40013,WM_SS_Event_Box_1,Season 1 Event Box,2,20,,200,,,,,0xFFFFFFFF,63,2,,,,,,{ callfunc CustomWMSS1Rand;  },{},{} // Free
 40014,WM_Hard_Core_Set_Box,XM Hardcore Set Box,18,20,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ getitem 40000,10; getitem 40004,10; getitem 40015,10; },{},{} // Free
 40015,WM_Insurance,Life Insurance,2,2,,10,,,,,0xFFFFFFFF,63,2,,,,,,{ sc_start SC_LIFEINSURANCE,1800000,0; },{},{} // Free
 40016,WM_Sg_White_Potion_Box2,Siege White Potion Box,2,20,,30,,,,,0xFFFFFFFF,63,2,,,,,,{ getitem 11503,100; },{},{}
