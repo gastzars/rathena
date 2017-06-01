@@ -557,13 +557,14 @@ izlude,128,152,4	script	Season Machine	564,{
 		next;
 		switch(select("รับรางวัล:ยกเลิกภารกิจ (100,000z):ยกเลิก"))
 		{
-			case 0:
+			case 1:
 				if (countitem(wm_ss_event_target) > wm_ss_event_target_amount && Zeny > 2000000) {
 					mes "[Season Machine]";
 					mes "ภารกิจสำเร็จ";
 					delitem wm_ss_event_target, wm_ss_event_target_amount;
 					Zeny -= 2000000;
 					getitem 40013, 1;
+					set wm_ss_event_1, 0;
 					close;
 				} else {
 					mes "[Season Machine]";
@@ -576,19 +577,19 @@ izlude,128,152,4	script	Season Machine	564,{
 					close;
 				}
 				break;
-			case 1:
+			case 2:
 				if (Zeny < 100000) {
 					mes "[Season Machine]";
 					mes "ท่านมีเงินไม่เพียงพอ";
 					close;
 				}
 				break;
-			case 2:
+			case 3:
 				end;
 				break;
 		}
 	}
-	
+	end;
 OnInit:
 	waitingroom "Collecting Event",0;
 	end;
