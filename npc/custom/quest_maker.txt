@@ -1,0 +1,673 @@
+//=============================================================
+//			-             Bank-Script               -
+//				
+//#############################################################
+
+/// ================================================= NPC  Shop ============================================
+// Armor
+-	shop	Q_Armor	-1,2358:-1,2356:-1,2385:-1
+// Weapon
+-	shop	Q_W_Dagger	-1,1228:-1,1233:-1,13034:-1,13035:-1,1244:-1,1240:-1,1227:-1,1225:-1,1224:-1
+-	shop	Q_W_Sword	-1,1182:-1,1140:-1,1134:-1,1166:-1,1132:-1,1137:-1,1169:-1,1141:-1,1181:-1,1139:-1,1185:-1
+-	shop	Q_W_Spear	-1,1467:-1,1470:-1,1415:-1,1475:-1,1414:-1,1469:-1,1416:-1
+-	shop	Q_W_Axe	-1,1305:-1,1364:-1,1369:-1,1365:-1,1367:-1
+-	shop	Q_W_Mace	-1,1527:-1,1526:-1,1528:-1,1535:-1,1541:-1
+-	shop	Q_W_Straff	-1,1636:-1,1629:-1,1631:-1,1634:-1,1630:-1,1635:-1
+-	shop	Q_W_Bow	-1,1736:-1,1737:-1,1725:-1,1719:-1,1720:-1
+-	shop	Q_W_Knuckler	-1,1814:-1,1813:-1
+-	shop	Q_W_Musical	-1,1913:-1
+-	shop	Q_W_Whip	-1,1963:-1
+-	shop	Q_W_Book	-1,1573:-1,1562:-1,1572:-1
+// Shield
+-	shop	Q_Shield	-1,2131:-1,2130:-1,2126:-1,2129:-1
+// Garment
+-	shop	Q_Garment	-1,2511:-1,2543:-1
+// Footgears
+-	shop	Q_Footgear	-1,2415:-1,2438:-1,2429:-1,2430:-1,2413:-1
+// Accessories
+-	shop	Q_Accessories	-1,2664:-1,2708:-1,2712:-1,2665:-1,2641:-1,2726:-1,2636:-1,2676:-1,2718:-1,2645:-1,2639:-1,2717:-1,2727:-1,2620:-1,2731:-1,2740:-1,2638:-1,2673:-1
+// Etc.
+-	shop	Q_Dye	-1,975:-1,976:-1,978:-1,979:-1,980:-1,981:-1,982:-1,983:-1
+-	shop	Q_Arrow	-1,12004:-1,12005:-1,12006:-1,12007:-1,12008:-1,12009:-1,12010:-1,12011:-1,12012:-1,12013:-1,12014:-1,12015:-1,12183:-1,12144:-1,12145:-1,12146:-1,12147:-1,12148:-1,12149:-1,12150:-1,12151:-1
+-	shop	Q_Box	-1,664:-1,665:-1,666:-1,667:-1
+-	shop	Q_Animal	-1,14569:-1,14570:-1,14571:-1,659:-1,14572:-1,636:-1,635:-1,14573:-1,12225:-1,14574:-1
+-	shop	Q_ER	-1,984:-1,985:-1,7620:-1,7619:-1
+-	shop	Q_Potion	-1,501:-1,502:-1,503:-1,504:-1,505:-1,506:-1
+-	shop	Q_Juice	-1,531:-1,532:-1,533:-1,534:-1
+-	shop	Q_Milk	-1,519:-1
+// Slot
+-	shop	Q_WC	-1,1568:-1,1571:-1,1569:-1,1570:-1,13105:-1,1912:-1,1959:-1
+-	shop	Q_WB	-1,1808:-1,13166:-1,1309:-1,1538:-1,1955:-1
+-	shop	Q_WA	-1,1727:-1,1816:-1,1172:-1,13030:-1,1149:-1,1480:-1,1539:-1,1726:-1,1266:-1,1275:-1,1278:-1,1276:-1,1277:-1,1922:-1,1976:-1,1178:-1,1532:-1,1171:-1
+-	shop	Q_WS	-1,13033:-1,13400:-1,1476:-1,1180:-1,1179:-1,13019:-1,1540:-1,1418:-1,13032:-1,13016:-1,13018:-1,13031:-1,1481:-1
+-	shop	Q_WSS	-1,13017:-1
+-	shop	Q_AC	-1,2118:-1,5270:-1,5348:-1,5168:-1,5349:-12120:-1,2120:-1,5347:-1,5351:-1
+-	shop	Q_AB	-1,5298:-1,2432:-1,5299:-1,2715:-1
+-	shop	Q_AA	-1,2525:-1,2434:-1,5159:-1,2121:-1,5158:-1,5167:-1,2359:-1,5157:-1,5271:-1,5350:-1
+-	shop	Q_AS	-1,2349:-1,5162:-1,2671:-1,2351:-1,5163:-1,5165:-1,2373:-1,2345:-1,2372:-1,5160:-1,2371:-1,2360:-1,2128:-1,2347:-1,5297:-1,5166:-1,5161:-1,5164:-1,2523:-1
+-	shop	Q_ASS	-1,2204:-1,2202:-1
+
+// =============================================== Item List ===============================================
+// =============== >> Buy << ===================
+function	script	Q_Buy	{
+// Dye
+if(@bought_nameid == 975) {	setarray @itemuse[0], 507, 973, 7134;				setarray @itemusemany[0], 30, 1, 1;			set @zenyuse, 3000;		}
+else if(@bought_nameid == 976) {	setarray @itemuse[0], 508, 973, 7134;				setarray @itemusemany[0], 30, 1, 1;			set @zenyuse, 3000;		}
+else if(@bought_nameid == 978) {	setarray @itemuse[0], 510, 973, 7134;				setarray @itemusemany[0], 30, 1, 1;			set @zenyuse, 3500;		}
+else if(@bought_nameid == 979) {	setarray @itemuse[0], 510, 511, 508, 973, 974, 7134;			setarray @itemusemany[0], 5, 20, 20, 1, 1, 1;			set @zenyuse, 5000;		}
+else if(@bought_nameid == 980) {	setarray @itemuse[0], 507, 508, 973, 974, 7134;			setarray @itemusemany[0], 20, 20, 1, 1, 1;			set @zenyuse, 5000;		}
+else if(@bought_nameid == 981) {	setarray @itemuse[0], 507, 510, 973, 974, 7134;			setarray @itemusemany[0], 30, 10, 1, 1, 1;			set @zenyuse, 5000;		}
+else if(@bought_nameid == 982) {	setarray @itemuse[0], 509, 973, 7134;				setarray @itemusemany[0], 30, 1, 1;			set @zenyuse, 3000;		}
+else if(@bought_nameid == 983) {	setarray @itemuse[0], 507, 508, 511, 973, 974, 7134;			setarray @itemusemany[0], 30, 30, 30, 1, 1, 1;		set @zenyuse, 7000;		}
+
+// Arrow
+else if(@bought_nameid == 12004) {	setarray @itemuse[0], 1750;					setarray @itemusemany[0], 500;				set @zenyuse, 100;		}
+else if(@bought_nameid == 12005) {	setarray @itemuse[0], 1770;					setarray @itemusemany[0], 500;				set @zenyuse, 100;		}
+else if(@bought_nameid == 12006) {	setarray @itemuse[0], 1753;					setarray @itemusemany[0], 500;				set @zenyuse, 100;		}
+else if(@bought_nameid == 12007) {	setarray @itemuse[0], 1765;					setarray @itemusemany[0], 500;				set @zenyuse, 100;		}
+else if(@bought_nameid == 12008) {	setarray @itemuse[0], 1752;					setarray @itemusemany[0], 500;				set @zenyuse, 100;		}
+else if(@bought_nameid == 12009) {	setarray @itemuse[0], 1751;					setarray @itemusemany[0], 500;				set @zenyuse, 100;		}
+else if(@bought_nameid == 12010) {	setarray @itemuse[0], 1755;					setarray @itemusemany[0], 500;				set @zenyuse, 100;		}
+else if(@bought_nameid == 12011) {	setarray @itemuse[0], 1756;					setarray @itemusemany[0], 500;				set @zenyuse, 100;		}
+else if(@bought_nameid == 12012) {	setarray @itemuse[0], 1754;					setarray @itemusemany[0], 500;				set @zenyuse, 100;		}
+else if(@bought_nameid == 12013) {	setarray @itemuse[0], 1767;					setarray @itemusemany[0], 500;				set @zenyuse, 100;		}
+else if(@bought_nameid == 12014) {	setarray @itemuse[0], 1757;					setarray @itemusemany[0], 500;				set @zenyuse, 100;		}
+else if(@bought_nameid == 12015) {	setarray @itemuse[0], 1762;					setarray @itemusemany[0], 500;				set @zenyuse, 100;		}
+else if(@bought_nameid == 12183) {	setarray @itemuse[0], 1772;					setarray @itemusemany[0], 500;				set @zenyuse, 100;		}
+else if(@bought_nameid == 12144) {	setarray @itemuse[0], 13204;					setarray @itemusemany[0], 500;				set @zenyuse, 500;		}
+else if(@bought_nameid == 12145) {	setarray @itemuse[0], 13206;					setarray @itemusemany[0], 500;				set @zenyuse, 500;		}
+else if(@bought_nameid == 12146) {	setarray @itemuse[0], 13205;					setarray @itemusemany[0], 500;				set @zenyuse, 500;		}
+else if(@bought_nameid == 12147) {	setarray @itemuse[0], 13207;					setarray @itemusemany[0], 500;				set @zenyuse, 500;		}
+else if(@bought_nameid == 12148) {	setarray @itemuse[0], 13203;					setarray @itemusemany[0], 500;				set @zenyuse, 500;		}
+else if(@bought_nameid == 12149) {	setarray @itemuse[0], 13200;					setarray @itemusemany[0], 500;				set @zenyuse, 500;		}
+else if(@bought_nameid == 12150) {	setarray @itemuse[0], 13202;					setarray @itemusemany[0], 500;				set @zenyuse, 500;		}
+else if(@bought_nameid == 12151) {	setarray @itemuse[0], 13201;					setarray @itemusemany[0], 500;				set @zenyuse, 500;		}
+
+// Box
+else if(@bought_nameid == 664) {	setarray @itemuse[0], 664, 7174, 7175;				setarray @itemusemany[0], 1, 5, 5;			set @zenyuse, 50000;		}
+else if(@bought_nameid == 665) {	setarray @itemuse[0], 664, 7174, 7175;				setarray @itemusemany[0], 1, 5, 5;			set @zenyuse, 50000;		}
+else if(@bought_nameid == 666) {	setarray @itemuse[0], 664, 7174, 7175;				setarray @itemusemany[0], 1, 5, 5;			set @zenyuse, 50000;		}
+else if(@bought_nameid == 667) {	setarray @itemuse[0], 664, 7174, 7175;				setarray @itemusemany[0], 1, 5, 5;			set @zenyuse, 50000;		}
+
+
+// Animal
+else if(@bought_nameid == 14569) {	setarray @itemuse[0], 4060;					setarray @itemusemany[0], 1;							}
+else if(@bought_nameid == 14570) {	setarray @itemuse[0], 4060;					setarray @itemusemany[0], 1;							}
+else if(@bought_nameid == 14571) {	setarray @itemuse[0], 4060;					setarray @itemusemany[0], 1;							}
+else if(@bought_nameid == 659) {	setarray @itemuse[0], 1558;					setarray @itemusemany[0], 5;							}
+else if(@bought_nameid == 14572) {	setarray @itemuse[0], 7300;					setarray @itemusemany[0], 1;							}
+else if(@bought_nameid == 636) {	setarray @itemuse[0], 7014;					setarray @itemusemany[0], 5;							}
+else if(@bought_nameid == 635) {	setarray @itemuse[0], 1004;					setarray @itemusemany[0], 10;							}
+else if(@bought_nameid == 14573) {	setarray @itemuse[0], 1009;					setarray @itemusemany[0], 1;							}
+else if(@bought_nameid == 12225) {	setarray @itemuse[0], 7034;					setarray @itemusemany[0], 10;							}
+else if(@bought_nameid == 14574) {	setarray @itemuse[0], 7005;					setarray @itemusemany[0], 100;							}
+
+
+// ER
+else if(@bought_nameid == 984) {	setarray @itemuse[0], 756;					setarray @itemusemany[0], 5 ;							}
+else if(@bought_nameid == 985) {	setarray @itemuse[0], 757;					setarray @itemusemany[0], 5 ;							}
+else if(@bought_nameid == 7620) {	setarray @itemuse[0], 984;					setarray @itemusemany[0], 100 ;		set @broken,50;				}
+else if(@bought_nameid == 7619) {	setarray @itemuse[0], 985;					setarray @itemusemany[0], 100 ;		set @broken,50;				}
+
+// Potion
+else if(@bought_nameid == 501) {	setarray @itemuse[0], 507, 713;					setarray @itemusemany[0], 2, 1;				set @zenyuse, 3;		}
+else if(@bought_nameid == 502) {	setarray @itemuse[0], 507, 508, 713;				setarray @itemusemany[0], 1, 1, 1;			set @zenyuse, 5;		}
+else if(@bought_nameid == 503) {	setarray @itemuse[0], 508, 713;					setarray @itemusemany[0], 2, 1;				set @zenyuse, 10;		}
+else if(@bought_nameid == 504) {	setarray @itemuse[0], 509, 713;					setarray @itemusemany[0], 2, 1;				set @zenyuse, 20;		}
+else if(@bought_nameid == 505) {	setarray @itemuse[0], 510, 713;					setarray @itemusemany[0], 2, 1;				set @zenyuse, 30;		}
+else if(@bought_nameid == 506) {	setarray @itemuse[0], 511, 713;					setarray @itemusemany[0], 2, 1;				set @zenyuse, 3;		}
+
+// Juice
+else if(@bought_nameid == 531) {	setarray @itemuse[0], 512, 713;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 3;		}
+else if(@bought_nameid == 532) {	setarray @itemuse[0], 513, 713;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 3;		}
+else if(@bought_nameid == 533) {	setarray @itemuse[0], 514, 713;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 3;		}
+else if(@bought_nameid == 534) {	setarray @itemuse[0], 515, 713;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 3;		}
+
+// Milk
+else if(@bought_nameid == 519) {	setarray @itemuse[0], 713;					setarray @itemusemany[0], 1;				set @zenyuse, 15;		}
+
+// Armor
+else if(@bought_nameid == 2358) {	setarray @itemuse[0], 2338, 4001;				setarray @itemusemany[0], 1, 1;							}
+else if(@bought_nameid == 2356) {	setarray @itemuse[0], 2324, 523;					setarray @itemusemany[0], 1, 100;						}
+else if(@bought_nameid == 2385) {	setarray @itemuse[0], 2342, 7018;				setarray @itemusemany[0], 1, 5;							}
+// Weapon - Dagger
+else if(@bought_nameid == 1228) {	setarray @itemuse[0], 1005, 989, 710, 969, 7292, 7291, 7295;		setarray @itemusemany[0], 2, 1, 1, 20, 30, 30, 30;					}
+else if(@bought_nameid == 1233) {	setarray @itemuse[0], 1005, 989, 710, 969, 7292, 7291, 7295;		setarray @itemusemany[0], 2, 1, 1, 20, 30, 30, 30;					}
+else if(@bought_nameid == 13034) {	setarray @itemuse[0], 1014, 1008;				setarray @itemusemany[0], 10, 10;						}
+else if(@bought_nameid == 13035) {	setarray @itemuse[0], 1014, 1008;				setarray @itemusemany[0], 10, 10;						}
+else if(@bought_nameid == 1244) {	setarray @itemuse[0], 1251, 523;					setarray @itemusemany[0], 1, 100;						}
+else if(@bought_nameid == 1240) {	setarray @itemuse[0], 638;					setarray @itemusemany[0], 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 1227) {	setarray @itemuse[0], 630, 1202;					setarray @itemusemany[0], 30, 20;						}
+else if(@bought_nameid == 1225) {	setarray @itemuse[0], 7292, 969, 999, 714;				setarray @itemusemany[0], 30, 10, 50, 10;						}
+else if(@bought_nameid == 1224) {	setarray @itemuse[0], 7292, 969, 999, 714;				setarray @itemusemany[0], 30, 10, 50, 10;						}
+
+// Weapon - Sword
+else if(@bought_nameid == 1182) {	setarray @itemuse[0], 7020, 7566, 7024;				setarray @itemusemany[0], 5, 5, 10;			set @zenyuse, 3000000;	}
+else if(@bought_nameid == 1140) {	setarray @itemuse[0], 1005, 989, 710, 969, 7292, 7291, 7295;		setarray @itemusemany[0], 2, 1, 1, 20, 30, 30, 30;					}
+else if(@bought_nameid == 1134) {	setarray @itemuse[0], 7290, 969, 999, 714;				setarray @itemusemany[0], 30, 10, 50, 10;						}
+else if(@bought_nameid == 1166) {	setarray @itemuse[0], 1005, 989, 710, 969, 7295, 7296, 7290;		setarray @itemusemany[0], 2, 1, 1, 20, 30, 30, 30;					}
+else if(@bought_nameid == 1132) {	setarray @itemuse[0], 1005, 989, 710, 969, 7294, 7297, 7293;		setarray @itemusemany[0], 2, 1, 1, 20, 30, 30, 30;					}
+else if(@bought_nameid == 1137) {	setarray @itemuse[0], 1005, 989, 710, 969, 7294, 7297, 7293;		setarray @itemusemany[0], 2, 1, 1, 20, 30, 30, 30;					}
+else if(@bought_nameid == 1169) {	setarray @itemuse[0], 7022, 7109;				setarray @itemusemany[0], 10, 5;							}
+else if(@bought_nameid == 1141) {	setarray @itemuse[0], 7295, 969, 999, 714;				setarray @itemusemany[0], 30, 10, 50, 10;						}
+else if(@bought_nameid == 1181) {	setarray @itemuse[0], 1237, 1009;				setarray @itemusemany[0], 1, 500;						}
+else if(@bought_nameid == 1139) {	setarray @itemuse[0], 7289, 969, 999, 714;				setarray @itemusemany[0], 30, 10, 50, 10;						}
+else if(@bought_nameid == 1185) {	setarray @itemuse[0], 13412, 13413;				setarray @itemusemany[0], 1, 1;							}
+
+// Weapon - Spear
+else if(@bought_nameid == 1467) {	setarray @itemuse[0], 7172, 1455;				setarray @itemusemany[0], 1000, 1;						}
+else if(@bought_nameid == 1470) {	setarray @itemuse[0], 1005, 989, 710, 969, 7290, 7296, 7292;		setarray @itemusemany[0], 2, 1, 1, 20, 30, 30, 30;					}
+else if(@bought_nameid == 1415) {	setarray @itemuse[0], 1005, 989, 710, 969, 7297, 7291, 7295;		setarray @itemusemany[0], 2, 1, 1, 20, 30, 30, 30;					}
+else if(@bought_nameid == 1475) {	setarray @itemuse[0], 1411;					setarray @itemusemany[0], 1;				set @zenyuse, 1000000;	}
+else if(@bought_nameid == 1414) {	setarray @itemuse[0], 7211;					setarray @itemusemany[0], 10;							}
+else if(@bought_nameid == 1469) {	setarray @itemuse[0], 1005, 989, 710, 969, 7290, 7296, 7292;		setarray @itemusemany[0], 2, 1, 1, 20, 30, 30, 30;					}
+else if(@bought_nameid == 1416) {	setarray @itemuse[0], 1005, 989, 710, 969, 7297, 7291, 7295;		setarray @itemusemany[0], 2, 1, 1, 20, 30, 30, 30;					}
+
+// Weapon - Axe
+else if(@bought_nameid == 1305) {	setarray @itemuse[0], 7208;					setarray @itemusemany[0], 1000;							}
+else if(@bought_nameid == 1364) {	setarray @itemuse[0], 1005, 989, 710, 969, 7289, 7294, 7291;		setarray @itemusemany[0], 2, 1, 1, 20, 30, 30, 30;					}
+else if(@bought_nameid == 1369) {	setarray @itemuse[0], 1005, 989, 710, 969, 7289, 7294, 7291;		setarray @itemusemany[0], 2, 1, 1, 20, 30, 30, 30;					}
+else if(@bought_nameid == 1365) {	setarray @itemuse[0], 7293, 969, 999, 714;				setarray @itemusemany[0], 30, 10, 50, 10;						}
+else if(@bought_nameid == 1367) {	setarray @itemuse[0], 7296, 969, 999, 714;				setarray @itemusemany[0], 30, 10, 50, 10;						}
+
+// Weapon - Mace
+else if(@bought_nameid == 1527) {	setarray @itemuse[0], 7291, 969, 999, 714;				setarray @itemusemany[0], 30, 10, 50, 10;						}
+else if(@bought_nameid == 1526) {	setarray @itemuse[0], 7294, 969, 999, 714;				setarray @itemusemany[0], 30, 10, 50, 10;						}
+else if(@bought_nameid == 1528) {	setarray @itemuse[0], 1005, 989, 710, 969, 7296, 7294, 7290;		setarray @itemusemany[0], 2, 1, 1, 20, 30, 30, 30;					}
+else if(@bought_nameid == 1535) {	setarray @itemuse[0], 1529, 658;					setarray @itemusemany[0], 1, 20;				set @zenyuse, 10000000;	}
+else if(@bought_nameid == 1541) {	setarray @itemuse[0], 1520, 7113;				setarray @itemusemany[0], 1, 10;				set @zenyuse, 1000000;	}
+
+// Weapon - Straff
+else if(@bought_nameid == 1636) {	setarray @itemuse[0], 1615, 7444;				setarray @itemusemany[0], 1,10;				set @zenyuse, 3000000;			}
+else if(@bought_nameid == 1629) {	setarray @itemuse[0], 1472, 7071;				setarray @itemusemany[0], 1,10;							}
+else if(@bought_nameid == 1631) {	setarray @itemuse[0], 1615, 1007;				setarray @itemusemany[0], 1,10;							}
+else if(@bought_nameid == 1634) {	setarray @itemuse[0], 1625, 7799;				setarray @itemusemany[0], 1,10;				set @zenyuse, 3000000;	}
+else if(@bought_nameid == 1630) {	setarray @itemuse[0], 1611, 7327;				setarray @itemusemany[0], 1,10;							}
+else if(@bought_nameid == 1635) {	setarray @itemuse[0], 1625, 7443;				setarray @itemusemany[0], 1,10;				set @zenyuse, 3000000;	}
+
+// Weapon - Bow
+else if(@bought_nameid == 1736) {	setarray @itemuse[0], 4117, 1711;				setarray @itemusemany[0], 1, 1;				set @zenyuse, 500000;	}
+else if(@bought_nameid == 1737) {	setarray @itemuse[0], 1724, 1039;				setarray @itemusemany[0], 1, 500;						}
+else if(@bought_nameid == 1725) {	setarray @itemuse[0], 1908, 1726;				setarray @itemusemany[0], 1, 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 1719) {	setarray @itemuse[0], 1705;					setarray @itemusemany[0], 20;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 1720) {	setarray @itemuse[0], 1005, 989, 710, 969, 7292, 7293, 7289;		setarray @itemusemany[0], 2, 1, 1, 20, 30, 30, 30;					}
+
+// Weapon - Knuckler
+else if(@bought_nameid == 1814) {	setarray @itemuse[0], 1005, 989, 710, 969, 7292, 7293, 7289;		setarray @itemusemany[0],  2, 1, 1, 20, 30, 30, 30;					}
+else if(@bought_nameid == 1813) {	setarray @itemuse[0], 1806;					setarray @itemusemany[0], 1;				set @zenyuse, 100000;	}
+
+// Weapon - Musical
+else if(@bought_nameid == 1913) {	setarray @itemuse[0], 1908, 7446;				setarray @itemusemany[0], 1, 1000;						}
+
+// Weapon - Whip
+else if(@bought_nameid == 1963) {	setarray @itemuse[0], 748, 678;					setarray @itemusemany[0], 100, 10;						}
+
+// Weapon - Book
+else if(@bought_nameid == 1573) {	setarray @itemuse[0], 642, 1053;					setarray @itemusemany[0], 1, 100;						}
+else if(@bought_nameid == 1562) {	setarray @itemuse[0], 1561, 7117;				setarray @itemusemany[0], 1, 10;							}
+else if(@bought_nameid == 1572) {	setarray @itemuse[0], 7562, 1006;				setarray @itemusemany[0], 1, 10;							}
+
+// Shield
+else if(@bought_nameid == 2131) {	setarray @itemuse[0], 2121, 7015;				setarray @itemusemany[0], 1, 100;						}
+else if(@bought_nameid == 2130) {	setarray @itemuse[0], 7108;					setarray @itemusemany[0], 5;							}
+else if(@bought_nameid == 2126) {	setarray @itemuse[0], 2107, 7563;				setarray @itemusemany[0], 1, 10;							}
+else if(@bought_nameid == 2129) {	setarray @itemuse[0], 1551, 7340;				setarray @itemusemany[0], 1, 5;							}
+
+// Garment
+else if(@bought_nameid == 2511) {	setarray @itemuse[0], 7450;					setarray @itemusemany[0], 10;							}
+else if(@bought_nameid == 2543) {	setarray @itemuse[0], 914;					setarray @itemusemany[0], 1000;							}
+
+// Footgear
+else if(@bought_nameid == 2415) {	setarray @itemuse[0], 4006, 2403;				setarray @itemusemany[0], 1, 1;							}
+else if(@bought_nameid == 2438) {	setarray @itemuse[0], 4195, 7298;				setarray @itemusemany[0], 1, 50;							}
+else if(@bought_nameid == 2429) {	setarray @itemuse[0], 2411, 998;					setarray @itemusemany[0], 1, 1000;						}
+else if(@bought_nameid == 2430) {	setarray @itemuse[0], 2411, 998;					setarray @itemusemany[0], 1, 1000;						}
+else if(@bought_nameid == 2413) {	setarray @itemuse[0], 2405, 949;					setarray @itemusemany[0], 2, 10;							}
+
+// Accessories
+else if(@bought_nameid == 2664) {	setarray @itemuse[0], 7166;					setarray @itemusemany[0], 20;							}
+else if(@bought_nameid == 2708) {	setarray @itemuse[0], 7451;					setarray @itemusemany[0], 10;							}
+else if(@bought_nameid == 2712) {	setarray @itemuse[0], 7114;					setarray @itemusemany[0], 10;							}
+else if(@bought_nameid == 2730) {	setarray @itemuse[0], 7618;					setarray @itemusemany[0], 10;							}
+else if(@bought_nameid == 2732) {	setarray @itemuse[0], 2616, 7799;				setarray @itemusemany[0], 1, 10;							}
+else if(@bought_nameid == 2665) {	setarray @itemuse[0], 934;					setarray @itemusemany[0], 100;							}
+else if(@bought_nameid == 2641) {	setarray @itemuse[0], 2627;					setarray @itemusemany[0], 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 2726) {	setarray @itemuse[0], 949;					setarray @itemusemany[0], 333;							}
+else if(@bought_nameid == 2663) {	setarray @itemuse[0], 1098;					setarray @itemusemany[0], 200;							}
+else if(@bought_nameid == 2739) {	setarray @itemuse[0], 7353, 7355;				setarray @itemusemany[0], 5, 5;							}
+else if(@bought_nameid == 2636) {	setarray @itemuse[0], 2610;					setarray @itemusemany[0], 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 2676) {	setarray @itemuse[0], 2602;					setarray @itemusemany[0], 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 2719) {	setarray @itemuse[0], 2266, 998;					setarray @itemusemany[0], 1, 1000;						}
+else if(@bought_nameid == 2640) {	setarray @itemuse[0], 2638, 2639;				setarray @itemusemany[0], 1, 1;							}
+else if(@bought_nameid == 2666) {	setarray @itemuse[0], 7327;					setarray @itemusemany[0], 50;							}
+else if(@bought_nameid == 2716) {	setarray @itemuse[0], 2604, 7190;				setarray @itemusemany[0], 1, 100;						}
+else if(@bought_nameid == 2718) {	setarray @itemuse[0], 4034, 2645;				setarray @itemusemany[0], 1, 1;							}
+else if(@bought_nameid == 2645) {	setarray @itemuse[0], 2601, 7163;				setarray @itemusemany[0], 1, 5;							}
+else if(@bought_nameid == 2639) {	setarray @itemuse[0], 7126, 909;					setarray @itemusemany[0], 10, 100;						}
+else if(@bought_nameid == 2717) {	setarray @itemuse[0], 7513;					setarray @itemusemany[0], 5;							}
+else if(@bought_nameid == 2667) {	setarray @itemuse[0], 2604, 2671;				setarray @itemusemany[0], 1, 1;							}
+else if(@bought_nameid == 2727) {	setarray @itemuse[0], 7216;					setarray @itemusemany[0], 333;							}
+else if(@bought_nameid == 2685) {	setarray @itemuse[0], 2610, 7018;				setarray @itemusemany[0], 1, 1;							}
+else if(@bought_nameid == 2683) {	setarray @itemuse[0], 2610, 7451;				setarray @itemusemany[0], 1, 1;							}
+else if(@bought_nameid == 2670) {	setarray @itemuse[0], 2610, 2618;				setarray @itemusemany[0], 1, 10;							}
+else if(@bought_nameid == 2682) {	setarray @itemuse[0], 2610, 7036;				setarray @itemusemany[0], 1, 1;							}
+else if(@bought_nameid == 2684) {	setarray @itemuse[0], 2610, 7300;				setarray @itemusemany[0], 1, 1;							}
+else if(@bought_nameid == 2620) {	setarray @itemuse[0], 7444;					setarray @itemusemany[0], 5;							}
+else if(@bought_nameid == 2731) {	setarray @itemuse[0], 7211;					setarray @itemusemany[0], 5;							}
+else if(@bought_nameid == 2740) {	setarray @itemuse[0], 7352, 7354;				setarray @itemusemany[0], 5, 5;							}
+else if(@bought_nameid == 2638) {	setarray @itemuse[0], 7126, 909;					setarray @itemusemany[0], 10, 100;						}
+else if(@bought_nameid == 2673) {	setarray @itemuse[0], 943, 1013, 2636;				setarray @itemusemany[0], 500, 500, 1;						}
+
+// Weapon C Rank
+else if(@bought_nameid == 1568) {	setarray @itemuse[0], 1553, 1010;				setarray @itemusemany[0], 1, 100;	set @broken,45;	set @zenyuse, 200000;	}
+else if(@bought_nameid == 1571) {	setarray @itemuse[0], 1556, 1010;				setarray @itemusemany[0], 1, 100;	set @broken,45;	set @zenyuse, 200000;	}
+else if(@bought_nameid == 1569) {	setarray @itemuse[0], 1554, 1010;				setarray @itemusemany[0], 1, 100;	set @broken,45;	set @zenyuse, 200000;	}
+else if(@bought_nameid == 1570) {	setarray @itemuse[0], 1555, 1010;				setarray @itemusemany[0], 1, 100;	set @broken,45;	set @zenyuse, 200000;	}
+else if(@bought_nameid == 13105) {	setarray @itemuse[0], 13104, 1010;				setarray @itemusemany[0], 1, 100;	set @broken,45;	set @zenyuse, 200000;	}
+else if(@bought_nameid == 1912) {	setarray @itemuse[0], 1911, 1010;				setarray @itemusemany[0], 1, 100;	set @broken,45;	set @zenyuse, 200000;	}
+else if(@bought_nameid == 1959) {	setarray @itemuse[0], 1958, 1010;				setarray @itemusemany[0], 1, 100;	set @broken,45;	set @zenyuse, 200000;	}
+
+// Weapon B Rank
+else if(@bought_nameid == 1808) {	setarray @itemuse[0], 1807, 1010;				setarray @itemusemany[0], 1, 100;	set @broken,35;	set @zenyuse, 200000;	}
+else if(@bought_nameid == 13166) {	setarray @itemuse[0], 13165, 1010;				setarray @itemusemany[0], 1, 100;	set @broken,35;	set @zenyuse, 200000;	}
+else if(@bought_nameid == 1309) {	setarray @itemuse[0], 1304, 1010;				setarray @itemusemany[0], 1, 100;	set @broken,35;	set @zenyuse, 200000;	}
+else if(@bought_nameid == 1955) {	setarray @itemuse[0], 1954, 1010;				setarray @itemusemany[0], 1, 100;	set @broken,35;	set @zenyuse, 200000;	}
+else if(@bought_nameid == 1538) {	setarray @itemuse[0], 1523, 984;					setarray @itemusemany[0], 1, 10;		set @broken,35;	set @zenyuse, 300000;	}
+
+// Weapon A Rank
+else if(@bought_nameid == 1727) {	setarray @itemuse[0], 1722, 984, 999;				setarray @itemusemany[0], 1, 20, 100;	set @broken,25;	set @zenyuse, 500000;	}
+else if(@bought_nameid == 1816) {	setarray @itemuse[0], 1814, 984, 999;				setarray @itemusemany[0], 1, 20, 100;	set @broken,25;	set @zenyuse, 500000;	}
+else if(@bought_nameid == 1172) {	setarray @itemuse[0], 1163, 984, 999;				setarray @itemusemany[0], 1, 20, 100;	set @broken,25;	set @zenyuse, 500000;	}
+else if(@bought_nameid == 13030) {	setarray @itemuse[0], 13001, 984, 999;				setarray @itemusemany[0], 1, 20, 100;	set @broken,25;	set @zenyuse, 500000;	}
+else if(@bought_nameid == 1149) {	setarray @itemuse[0], 1129, 984, 999;				setarray @itemusemany[0], 1, 20, 100;	set @broken,25;	set @zenyuse, 500000;	}
+else if(@bought_nameid == 1480) {	setarray @itemuse[0], 1474, 984, 999;				setarray @itemusemany[0], 1, 20, 100;	set @broken,25;	set @zenyuse, 500000;	}
+else if(@bought_nameid == 1539) {	setarray @itemuse[0], 1524, 984, 999;				setarray @itemusemany[0], 1, 20, 100;	set @broken,25;	set @zenyuse, 500000;	}
+else if(@bought_nameid == 1726) {	setarray @itemuse[0], 1718, 984, 999;				setarray @itemusemany[0], 1, 20, 100;	set @broken,25;	set @zenyuse, 500000;	}
+else if(@bought_nameid == 1266) {	setarray @itemuse[0], 1261, 984, 999;				setarray @itemusemany[0], 1, 20, 100;	set @broken,25;	set @zenyuse, 500000;	}
+else if(@bought_nameid == 1275) {	setarray @itemuse[0], 1256, 984, 999;				setarray @itemusemany[0], 1, 20, 100;	set @broken,25;	set @zenyuse, 500000;	}
+else if(@bought_nameid == 1278) {	setarray @itemuse[0], 1259, 984, 999;				setarray @itemusemany[0], 1, 20, 100;	set @broken,25;	set @zenyuse, 500000;	}
+else if(@bought_nameid == 1276) {	setarray @itemuse[0], 1257, 984, 999;				setarray @itemusemany[0], 1, 20, 100;	set @broken,25;	set @zenyuse, 500000;	}
+else if(@bought_nameid == 1277) {	setarray @itemuse[0], 1258, 984, 999;				setarray @itemusemany[0], 1, 20, 100;	set @broken,25;	set @zenyuse, 500000;	}
+else if(@bought_nameid == 1922) {	setarray @itemuse[0], 1918, 984, 999;				setarray @itemusemany[0], 1, 20, 100;	set @broken,25;	set @zenyuse, 500000;	}
+else if(@bought_nameid == 1976) {	setarray @itemuse[0], 1970, 984, 999;				setarray @itemusemany[0], 1, 20, 100;	set @broken,25;	set @zenyuse, 500000;	}
+else if(@bought_nameid == 1479) {	setarray @itemuse[0], 1477, 984, 999;				setarray @itemusemany[0], 1, 20, 100;	set @broken,25;	set @zenyuse, 500000;	}
+else if(@bought_nameid == 1178) {	setarray @itemuse[0], 1167, 984, 999;				setarray @itemusemany[0], 1, 20, 100;	set @broken,25;	set @zenyuse, 500000;	}
+else if(@bought_nameid == 1532) {	setarray @itemuse[0], 1522, 984, 999;				setarray @itemusemany[0], 1, 20, 100;	set @broken,25;	set @zenyuse, 500000;	}
+else if(@bought_nameid == 1171) {	setarray @itemuse[0], 1168, 984, 999;				setarray @itemusemany[0], 1, 20, 100;	set @broken,25;	set @zenyuse, 800000;	}
+
+// Weapon S Rank
+else if(@bought_nameid == 13033) {	setarray @itemuse[0], 1232, 984, 999;				setarray @itemusemany[0], 1, 50, 100;	set @broken,15;	set @zenyuse, 1000000;	}
+else if(@bought_nameid == 13400) {	setarray @itemuse[0], 1135, 984, 999;				setarray @itemusemany[0], 1, 50, 100;	set @broken,15;	set @zenyuse, 1000000;	}
+else if(@bought_nameid == 1476) {	setarray @itemuse[0], 1466, 984, 999;				setarray @itemusemany[0], 1, 50, 100;	set @broken,15;	set @zenyuse, 1000000;	}
+else if(@bought_nameid == 1180) {	setarray @itemuse[0], 1166, 984, 999;				setarray @itemusemany[0], 1, 50, 100;	set @broken,15;	set @zenyuse, 1000000;	}
+else if(@bought_nameid == 1179) {	setarray @itemuse[0], 1169, 984, 999;				setarray @itemusemany[0], 1, 50, 100;	set @broken,15;	set @zenyuse, 1000000;	}
+else if(@bought_nameid == 13019) {	setarray @itemuse[0], 13002, 984, 999;				setarray @itemusemany[0], 1, 50, 100;	set @broken,15;	set @zenyuse, 1000000;	}
+else if(@bought_nameid == 1540) {	setarray @itemuse[0], 1528, 984, 999;				setarray @itemusemany[0], 1, 50, 100;	set @broken,15;	set @zenyuse, 1000000;	}
+else if(@bought_nameid == 1418) {	setarray @itemuse[0], 1413, 984, 999;				setarray @itemusemany[0], 1, 50, 100;	set @broken,15;	set @zenyuse, 1000000;	}
+else if(@bought_nameid == 13032) {	setarray @itemuse[0], 1225, 984, 999;				setarray @itemusemany[0], 1, 50, 100;	set @broken,15;	set @zenyuse, 1000000;	}
+else if(@bought_nameid == 13016) {	setarray @itemuse[0], 1239, 984, 999;				setarray @itemusemany[0], 1, 50, 100;	set @broken,15;	set @zenyuse, 1000000;	}
+else if(@bought_nameid == 13018) {	setarray @itemuse[0], 1236, 984, 999;				setarray @itemusemany[0], 1, 50, 100;	set @broken,15;	set @zenyuse, 1000000;	}
+else if(@bought_nameid == 13031) {	setarray @itemuse[0], 1224, 984, 999;				setarray @itemusemany[0], 1, 50, 100;	set @broken,15;	set @zenyuse, 1000000;	}
+else if(@bought_nameid == 1481) {	setarray @itemuse[0], 1468, 984, 999;				setarray @itemusemany[0], 1, 50, 100;	set @broken,15;	set @zenyuse, 1000000;	}
+
+// Weapon SS Rank
+else if(@bought_nameid == 13017) {	setarray @itemuse[0], 1230, 7620;				setarray @itemusemany[0], 1, 5;		set @broken,5;	set @zenyuse, 2000000;	}
+
+
+// Armor C Rank
+else if(@bought_nameid == 2118) {	setarray @itemuse[0], 2118, 999;					setarray @itemusemany[0], 1, 50;		set @broken,45;	set @zenyuse, 200000;	}
+else if(@bought_nameid == 5348) {	setarray @itemuse[0], 2244, 999;					setarray @itemusemany[0], 1, 50;		set @broken,45;	set @zenyuse, 200000;	}
+else if(@bought_nameid == 5168) {	setarray @itemuse[0], 5046, 999;					setarray @itemusemany[0], 1, 50;		set @broken,45;	set @zenyuse, 200000;	}
+else if(@bought_nameid == 5349) {	setarray @itemuse[0], 5016, 999;					setarray @itemusemany[0], 1, 50;		set @broken,45;	set @zenyuse, 200000;	}
+else if(@bought_nameid == 5270) {	setarray @itemuse[0], 5189, 999;					setarray @itemusemany[0], 1, 30;		set @broken,45;	set @zenyuse, 200000;	}
+else if(@bought_nameid == 2120) {	setarray @itemuse[0], 2120, 999;					setarray @itemusemany[0], 1, 30;		set @broken,45;	set @zenyuse, 200000;	}
+else if(@bought_nameid == 5347) {	setarray @itemuse[0], 5012, 999;					setarray @itemusemany[0], 1, 30;		set @broken,45;	set @zenyuse, 200000;	}
+else if(@bought_nameid == 5351) {	setarray @itemuse[0], 2253, 999;					setarray @itemusemany[0], 1, 30;		set @broken,45;	set @zenyuse, 200000;	}
+
+// Armor B Rank
+else if(@bought_nameid == 2432) {	setarray @itemuse[0], 2409, 999;					setarray @itemusemany[0], 1, 50;		set @broken,35;	set @zenyuse, 200000;	}
+else if(@bought_nameid == 2715) {	setarray @itemuse[0], 2609, 999;					setarray @itemusemany[0], 1, 50;		set @broken,35;	set @zenyuse, 200000;	}
+else if(@bought_nameid == 5298) {	setarray @itemuse[0], 5258, 999;					setarray @itemusemany[0], 1, 100;	set @broken,35;	set @zenyuse, 350000;	}
+else if(@bought_nameid == 5299) {	setarray @itemuse[0], 5263, 999;					setarray @itemusemany[0], 1, 100;	set @broken,35;	set @zenyuse, 350000;	}
+
+// Armor A Rank
+else if(@bought_nameid == 5167) {	setarray @itemuse[0], 2264, 985;					setarray @itemusemany[0], 1, 10;		set @broken,25;	set @zenyuse, 300000;	}
+else if(@bought_nameid == 2434) {	setarray @itemuse[0], 2425, 985;					setarray @itemusemany[0], 1, 10;		set @broken,25;	set @zenyuse, 500000;	}
+else if(@bought_nameid == 5350) {	setarray @itemuse[0], 2287, 985;					setarray @itemusemany[0], 1, 10;		set @broken,25;	set @zenyuse, 500000;	}
+else if(@bought_nameid == 2525) {	setarray @itemuse[0], 2507, 985;					setarray @itemusemany[0], 1, 10;		set @broken,25;	set @zenyuse, 400000;	}
+else if(@bought_nameid == 5159) {	setarray @itemuse[0], 2246, 985;					setarray @itemusemany[0], 1, 10;		set @broken,25;	set @zenyuse, 400000;	}
+else if(@bought_nameid == 2121) {	setarray @itemuse[0], 2109, 985;					setarray @itemusemany[0], 1, 10;		set @broken,25;	set @zenyuse, 400000;	}
+else if(@bought_nameid == 5158) {	setarray @itemuse[0], 2251, 985;					setarray @itemusemany[0], 1, 10;		set @broken,25;	set @zenyuse, 400000;	}
+else if(@bought_nameid == 2359) {	setarray @itemuse[0], 2337, 985;					setarray @itemusemany[0], 1, 10;		set @broken,25;	set @zenyuse, 400000;	}
+else if(@bought_nameid == 5157) {	setarray @itemuse[0], 2299, 985;					setarray @itemusemany[0], 1, 10;		set @broken,25;	set @zenyuse, 400000;	}
+else if(@bought_nameid == 5271) {	setarray @itemuse[0], 5152, 985;					setarray @itemusemany[0], 1, 10;		set @broken,25;	set @zenyuse, 500000;	}
+
+// Armor S Rank
+else if(@bought_nameid == 2373) {	setarray @itemuse[0], 2327, 985;					setarray @itemusemany[0], 1, 10;		set @broken,15;	set @zenyuse, 1000000;	}
+else if(@bought_nameid == 2372) {	setarray @itemuse[0], 2334, 985;					setarray @itemusemany[0], 1, 10;		set @broken,15;	set @zenyuse, 1000000;	}
+else if(@bought_nameid == 2371) {	setarray @itemuse[0], 2339, 985;					setarray @itemusemany[0], 1, 10;		set @broken,15;	set @zenyuse, 1000000;	}
+else if(@bought_nameid == 2128) {	setarray @itemuse[0], 2111, 985;					setarray @itemusemany[0], 1, 10;		set @broken,15;	set @zenyuse, 1000000;	}
+else if(@bought_nameid == 2523) {	setarray @itemuse[0], 2522, 985;					setarray @itemusemany[0], 1, 10;		set @broken,15;	set @zenyuse, 1000000;	}
+else if(@bought_nameid == 2671) {	setarray @itemuse[0], 2619, 985;					setarray @itemusemany[0], 1, 20;		set @broken,15;	set @zenyuse, 1000000;	}
+else if(@bought_nameid == 2360) {	setarray @itemuse[0], 2343, 985;					setarray @itemusemany[0], 1, 20;		set @broken,15;	set @zenyuse, 1000000;	}
+else if(@bought_nameid == 5166) {	setarray @itemuse[0], 5053, 985;					setarray @itemusemany[0], 1, 20;		set @broken,15;	set @zenyuse, 1000000;	}
+else if(@bought_nameid == 2349) {	setarray @itemuse[0], 2348, 985;					setarray @itemusemany[0], 1, 20;		set @broken,15;	set @zenyuse, 2000000;	}
+else if(@bought_nameid == 5162) {	setarray @itemuse[0], 5017, 985;					setarray @itemusemany[0], 1, 20;		set @broken,15;	set @zenyuse, 2000000;	}
+else if(@bought_nameid == 2351) {	setarray @itemuse[0], 2350, 985;					setarray @itemusemany[0], 1, 20;		set @broken,15;	set @zenyuse, 2000000;	}
+else if(@bought_nameid == 5163) {	setarray @itemuse[0], 5019, 985;					setarray @itemusemany[0], 1, 20;		set @broken,15;	set @zenyuse, 2000000;	}
+else if(@bought_nameid == 5165) {	setarray @itemuse[0], 2235, 985;					setarray @itemusemany[0], 1, 20;		set @broken,15;	set @zenyuse, 2000000;	}
+else if(@bought_nameid == 2345) {	setarray @itemuse[0], 2344, 985;					setarray @itemusemany[0], 1, 20;		set @broken,15;	set @zenyuse, 2000000;	}
+else if(@bought_nameid == 5160) {	setarray @itemuse[0], 2256, 985;					setarray @itemusemany[0], 1, 20;		set @broken,15;	set @zenyuse, 2000000;	}
+else if(@bought_nameid == 2375) {	setarray @itemuse[0], 5094, 985;					setarray @itemusemany[0], 1, 20;		set @broken,15;	set @zenyuse, 2000000;	}
+else if(@bought_nameid == 2347) {	setarray @itemuse[0], 2343, 985;					setarray @itemusemany[0], 1, 20;		set @broken,15;	set @zenyuse, 2000000;	}
+else if(@bought_nameid == 5297) {	setarray @itemuse[0], 5257, 985;					setarray @itemusemany[0], 1, 20;		set @broken,15;	set @zenyuse, 2000000;	}
+else if(@bought_nameid == 5161) {	setarray @itemuse[0], 2258, 985;					setarray @itemusemany[0], 1, 20;		set @broken,15;	set @zenyuse, 2000000;	}
+else if(@bought_nameid == 5164) {	setarray @itemuse[0], 2234, 985;					setarray @itemusemany[0], 1, 20;		set @broken,15;	set @zenyuse, 2000000;	}
+
+// Armor SS Rank
+else if(@bought_nameid == 2204) {	setarray @itemuse[0], 2203, 7619, 969;				setarray @itemusemany[0], 1, 5, 5;	set @broken,5;	set @zenyuse, 10000000;	}
+else if(@bought_nameid == 2202) {	setarray @itemuse[0], 2201, 7619, 969;				setarray @itemusemany[0], 1, 5, 10;	set @broken,5;	set @zenyuse, 10000000;	}
+
+// Color
+else if(@bought_nameid == 5191) {	setarray @itemuse[0], 2209, 983;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 5236) {	setarray @itemuse[0], 5076, 978;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 5233) {	setarray @itemuse[0], 5058, 978;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 5241) {	setarray @itemuse[0], 5027, 978;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 5235) {	setarray @itemuse[0], 5076, 983, 982;				setarray @itemusemany[0], 1, 1, 1;			set @zenyuse, 100000;	}
+else if(@bought_nameid == 5229) {	setarray @itemuse[0], 5038, 983, 982;				setarray @itemusemany[0], 1, 1, 1;			set @zenyuse, 100000;	}
+else if(@bought_nameid == 5231) {	setarray @itemuse[0], 5058, 983, 982;				setarray @itemusemany[0], 1, 1, 1;			set @zenyuse, 100000;	}
+else if(@bought_nameid == 5240) {	setarray @itemuse[0], 5027, 983, 982;				setarray @itemusemany[0], 1, 1, 1;			set @zenyuse, 100000;	}
+else if(@bought_nameid == 5193) {	setarray @itemuse[0], 2209, 979;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 5196) {	setarray @itemuse[0], 2209, 980;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 5237) {	setarray @itemuse[0], 5076, 981;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 5232) {	setarray @itemuse[0], 5058, 981;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 5194) {	setarray @itemuse[0], 2209, 981;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 5227) {	setarray @itemuse[0], 5038, 975;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 5238) {	setarray @itemuse[0], 5027, 975;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 5195) {	setarray @itemuse[0], 2209, 975;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 5228) {	setarray @itemuse[0], 5038, 982;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 5230) {	setarray @itemuse[0], 5058, 982;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 5239) {	setarray @itemuse[0], 5027, 982;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 5206) {	setarray @itemuse[0], 2269, 982;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 5197) {	setarray @itemuse[0], 2209, 982;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 5234) {	setarray @itemuse[0], 5058, 976;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 5242) {	setarray @itemuse[0], 5027, 976;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 100000;	}
+else if(@bought_nameid == 5192) {	setarray @itemuse[0], 2209, 976;					setarray @itemusemany[0], 1, 1;				set @zenyuse, 100000;	}
+
+return;
+}
+// =============== >> Sell << ===================
+function	script	Q_Sell	{
+
+// Arrow
+if(@sold_nameid == 1750) {		set @itemget, 12004;		set @itemuse, 500;		set @zenyuse, 100;	}
+else if(@sold_nameid == 1770) {		set @itemget, 12005;		set @itemuse, 500;		set @zenyuse, 100;	}
+else if(@sold_nameid == 1753) {		set @itemget, 12006;		set @itemuse, 500;		set @zenyuse, 100;	}
+else if(@sold_nameid == 1765) {		set @itemget, 12007;		set @itemuse, 500;		set @zenyuse, 100;	}
+else if(@sold_nameid == 1752) {		set @itemget, 12008;		set @itemuse, 500;		set @zenyuse, 100;	}
+else if(@sold_nameid == 1751) {		set @itemget, 12009;		set @itemuse, 500;		set @zenyuse, 100;	}
+else if(@sold_nameid == 1755) {		set @itemget, 12010;		set @itemuse, 500;		set @zenyuse, 100;	}
+else if(@sold_nameid == 1756) {		set @itemget, 12011;		set @itemuse, 500;		set @zenyuse, 100;	}
+else if(@sold_nameid == 1754) {		set @itemget, 12012;		set @itemuse, 500;		set @zenyuse, 100;	}
+else if(@sold_nameid == 1767) {		set @itemget, 12013;		set @itemuse, 500;		set @zenyuse, 100;	}
+else if(@sold_nameid == 1757) {		set @itemget, 12014;		set @itemuse, 500;		set @zenyuse, 100;	}
+else if(@sold_nameid == 1762) {		set @itemget, 12015;		set @itemuse, 500;		set @zenyuse, 100;	}
+else if(@sold_nameid == 1772) {		set @itemget, 12183;		set @itemuse, 500;		set @zenyuse, 100;	}
+else if(@sold_nameid == 13204) {	set @itemget, 12144;		set @itemuse, 500;		set @zenyuse, 100;	}
+else if(@sold_nameid == 13206) {	set @itemget, 12145;		set @itemuse, 500;		set @zenyuse, 100;	}
+else if(@sold_nameid == 13205) {	set @itemget, 12146;		set @itemuse, 500;		set @zenyuse, 100;	}
+else if(@sold_nameid == 13207) {	set @itemget, 12147;		set @itemuse, 500;		set @zenyuse, 100;	}
+else if(@sold_nameid == 13203) {	set @itemget, 12148;		set @itemuse, 500;		set @zenyuse, 100;	}
+else if(@sold_nameid == 13200) {	set @itemget, 12149;		set @itemuse, 500;		set @zenyuse, 100;	}
+else if(@sold_nameid == 13202) {	set @itemget, 12150;		set @itemuse, 500;		set @zenyuse, 100;	}
+else if(@sold_nameid == 13201) {	set @itemget, 12151;		set @itemuse, 500;		set @zenyuse, 100;	}
+
+// ER
+else if(@sold_nameid == 756) {		set @itemget, 984;		set @itemuse, 5;				}
+else if(@sold_nameid == 757) {		set @itemget, 985;		set @itemuse, 5;				}
+else if(@sold_nameid == 984) {		set @itemget, 7620;		set @itemuse, 100;		set @broken,50;	}
+else if(@sold_nameid == 985) {		set @itemget, 7619;		set @itemuse, 100;		set @broken,50;	}
+
+// Milk
+else if(@sold_nameid == 713) {		set @itemget, 519;		set @itemuse, 1;		set @zenyuse, 15;	}
+
+return;
+}
+
+// =============================================== NPC Special Shop =========================================
+// =============== >> Quest Shop ===================
+-	script	Quest Shop	-1,{
+set $@tr$,"^000080[ Ellisia ]^000000";
+mes $@tr$;
+mes "สวัสดี ^FF0000 "+strcharinfo(0)+" ^000000 ";
+mes "ท่านต้องการแลก Item ประเภทใด ?";
+next;
+switch(select("^FF0000-^000000 Armors:^FF0000-^000000 Weapon:^FF0000-^000000 Shield:^FF0000-^000000 Garment:^FF0000-^000000 FootGears:^FF0000-^000000 Accessories:^FF0000-^000000 Etc.")) {
+case 1:	callfunc "Shop_Q","Q_Armor",1;
+case 2:
+mes $@tr$;
+mes "รายกายได้ถูกเรียงตามชื่อไว้แล้ว ";
+mes "เชิญเลือกได้เลยค่ะ ";
+next;
+switch(select("^FF0000-^000000 Dagger:^FF0000-^000000 Sword:^FF0000-^000000 Spear:^FF0000-^000000 Axe:^FF0000-^000000 Mace:^FF0000-^000000 Rod & Straffs:^FF0000-^000000 Bow:^FF0000-^000000 Knuckler:^FF0000-^000000 Musical Instrument:^FF0000-^000000 Whip:^FF0000-^000000 Book")) {
+case 1:	callfunc "Shop_Q","Q_W_Dagger",1;
+case 2:	callfunc "Shop_Q","Q_W_Sword",1;
+case 3:	callfunc "Shop_Q","Q_W_Spear",1;
+case 4:	callfunc "Shop_Q","Q_W_Axe",1;
+case 5:	callfunc "Shop_Q","Q_W_Mace",1;
+case 6:	callfunc "Shop_Q","Q_W_Straff",1;
+case 7:	callfunc "Shop_Q","Q_W_Bow",1;
+case 8:	callfunc "Shop_Q","Q_W_Knuckler",1;
+case 9:	callfunc "Shop_Q","Q_W_Musical",1;
+case 10:	callfunc "Shop_Q","Q_W_Whip",1;
+case 11:	callfunc "Shop_Q","Q_W_Book",1;
+}
+case 3:	callfunc "Shop_Q","Q_Shield",1;
+case 4:	callfunc "Shop_Q","Q_Garment",1;
+case 5:	callfunc "Shop_Q","Q_Footgear",1;
+case 6:	callfunc "Shop_Q","Q_Accessories",1;
+case 7:
+next;
+mes $@tr$;
+mes "เชิญเลือกได้เลยค่ะ ";
+next;
+switch(select("^FF0000-^000000 สีย้อมผ้า:^FF0000-^000000 กระบอกธนู / กล่องกระสุน:^FF0000-^000000 Gift Box:^FF0000-^000000 ที่จับสัตว์:^FF0000-^000000 Elu / Ori:^FF0000-^000000 Potion:^FF0000-^000000 Juice:^FF0000-^000000 Milk")) {
+case 1:	callfunc "Shop_Q","Q_Dye",1;
+case 2:	callfunc "Shop_Q","Q_Arrow",1;
+case 3:	callfunc "Shop_Q","Q_Box",1;
+case 4:	callfunc "Shop_Q","Q_Animal",1;
+case 5:	callfunc "Shop_Q","Q_ER",1;
+case 6:	callfunc "Shop_Q","Q_Potion",1;
+case 7:	callfunc "Shop_Q","Q_Juice",1;
+case 8:	callfunc "Shop_Q","Q_Milk",0;
+
+}
+}
+OnBuyItem:
+callfunc "Q_ItemBuy";
+OnSellItem:
+callfunc "Q_ItemSell";
+end;
+}
+
+// =============== >> Slot Shop ====================
+-	script	Slot Shop	-1,{
+set $@tr$,"^000080[ Diguts ]^000000";
+mes $@tr$;
+mes "สวัสดี ^FF0000 "+strcharinfo(0)+" ^000000 ";
+mes "ท่านต้องการเจาะรู Item ประเภทใด ?";
+next;
+switch(select("^FF0000-^000000 Weapons:^FF0000-^000000 Armors")) {
+case 1:	
+next;
+mes $@tr$;
+mes "เชิญเลือกได้เลย ";
+next;
+switch(select("^FF0000-^000000 C Rank:^FF0000-^000000 B Rank:^FF0000-^000000 A Rank:^FF0000-^000000 S Rank:^FF0000-^000000 Special Rank")) {
+case 1:	callfunc "Shop_Q","Q_WC",1;
+case 2:	callfunc "Shop_Q","Q_WB",1;
+case 3:	callfunc "Shop_Q","Q_WA",1;
+case 4:	callfunc "Shop_Q","Q_WS",1;
+case 5:	callfunc "Shop_Q","Q_WSS",1;
+}
+case 2:
+next;
+mes $@tr$;
+mes "เชิญเลือกได้เลย ";
+next;
+switch(select("^FF0000-^000000 C Rank:^FF0000-^000000 B Rank:^FF0000-^000000 A Rank:^FF0000-^000000 S Rank:^FF0000-^000000 Special Rank")) {
+case 1:	callfunc "Shop_Q","Q_AC",1;
+case 2:	callfunc "Shop_Q","Q_AB",1;
+case 3:	callfunc "Shop_Q","Q_AA",1;
+case 4:	callfunc "Shop_Q","Q_AS",1;
+case 5:	callfunc "Shop_Q","Q_ASS",1;
+}
+}
+OnBuyItem:
+callfunc "Q_ItemBuy";
+end;
+}
+
+// ============================================ Function Run Shop ===========================================
+function	script	Shop_Q	{	npcshopattach getarg(0),1;	close2;	cutin "",255;	callshop getarg(0),getarg(1);	end;	}
+
+// ============================================ Function Check Item ==========================================
+function	script	Q_ItemBuy	{
+for (set .@g,0; .@g < getarraysize(@bought_nameid); set .@g,.@g+1) {
+	sleep2 1;
+	set @bought_nameid,@bought_nameid[.@g];
+	deletearray @itemuse[0],getarraysize(@itemuse);
+	deletearray @itemusemany[0],getarraysize(@itemusemany);
+	set @broken,0;	set @zenyuse, 0;
+	callfunc "Q_Buy";
+		if(@itemuse[0] <= 0)	goto check;	
+			set .@r,0;	set .@up,0;	set @itemgetmany,0;
+			for( set .@r,0; .@r < getarraysize(@itemuse); set .@r,.@r+1 ) {
+				if(.@up >= getarraysize(@itemuse)) break;
+				set .@itemup[.@up], countitem(@itemuse[.@up])/@itemusemany[.@up];
+				if(.@up == 0) set @itemgetmany,.@itemup[.@up];
+				if(@itemgetmany > .@itemup[.@up]) set @itemgetmany,.@itemup[.@up];
+				set .@up,.@up+1;
+				continue;
+			}
+check:	
+	dispbottom "=============================================";
+		if(@itemuse[0] <= 0){
+			if (0 == getitemslots( @bought_nameid[.@g])){	dispbottom "ในขณะนี้ "+getitemname(@bought_nameid[.@g])+" ไม่มี Quest ให้แลก";	}
+			if (1 <= getitemslots( @bought_nameid[.@g])){	dispbottom "ในขณะนี้ "+getitemname(@bought_nameid[.@g])+" ["+getitemslots( @bought_nameid[.@g])+"] ไม่มี Quest ให้แลก";	}
+		}
+		else if (@itemgetmany == 0){
+			if (0 == getitemslots( @bought_nameid[.@g])){	dispbottom "Item ที่ต้องการแลกกับ "+getitemname(@bought_nameid[.@g])+" จำนวน 1 ea";	}
+			if (1 <= getitemslots( @bought_nameid[.@g])){	dispbottom "Item ที่ต้องการแลกกับ "+getitemname(@bought_nameid[.@g])+" ["+getitemslots( @bought_nameid[.@g])+"] จำนวน 1 ea";	}
+			set .@d,0;
+			for( set .@i,0; .@i < getarraysize(@itemuse); set .@i,.@i+1 ) {
+				if(.@d >= getarraysize(@itemuse)) break;
+				if (0 == getitemslots( @itemuse[.@d])){	dispbottom " "+(.@d+1)+"> "+getitemname(@itemuse[.@d])+" จำนวน "+@itemusemany[.@d]+" ea";	}
+				if (1 <= getitemslots( @itemuse[.@d])){	dispbottom " "+(.@d+1)+"> "+getitemname(@itemuse[.@d])+" ["+getitemslots( @itemuse[.@d])+"] จำนวน "+@itemusemany[.@d]+" ea";	}
+				set .@d,.@d+1;
+				continue;
+			}
+			if(@broken != 0) {	set .@failmake,100-@broken;	dispbottom " --> มีโอกาสเสียหาย  "+.@failmake+" % ";	}
+			if(@zenyuse != 0) {	dispbottom	"และใช้เงินจำนวน  "+ @zenyuse +" Zeny";	}
+		}
+		else if (@bought_quantity[.@g] > @itemgetmany){
+			dispbottom "จาก Item ที่ท่านมี ท่านสามารถแลก "+getitemname(@bought_nameid[.@g])+" ได้ไม่เกิน  "+@itemgetmany+" ea ";
+		}
+		else if (Zeny < (@zenyuse*@bought_quantity[.@g])){	
+			if (@bought_quantity[.@g] == 1)	dispbottom "เงินที่ท่านเตรียมมามีไม่พอ ต้องใช้เงินจำนวน  "+@zenyuse+" Zeny ในการแลก "+getitemname(@bought_nameid[.@g])+"";
+			else if (@bought_quantity[.@g] >= 2)	dispbottom "เงินที่ท่านเตรียมมามีไม่พอ ต้องใช้เงินจำนวน  "+(@zenyuse*@bought_quantity[.@g])+" Zeny ในการแลก "+getitemname(@bought_nameid[.@g])+" จำนวน "+@bought_quantity[.@g]+" ea";
+		}
+		else if ((@bought_quantity[.@g] <= @itemgetmany) && (Zeny >= (@zenyuse*@bought_quantity[.@g]))){
+			set .@r,0;	set .@up,0;
+			for( set .@r,0; .@r < getarraysize(@itemuse); set .@r,.@r+1 ) {
+				if(.@up >= getarraysize(@itemuse)) break;
+				delitem @itemuse[.@up],@itemusemany[.@up]*@bought_quantity[.@g];
+				dispbottom "-> "+getitemname(@itemuse[.@up])+" ได้ถูกนำไปใช้จำนวน "+(@itemusemany[.@up]*@bought_quantity[.@g])+" ea";
+				set .@up,.@up+1;
+				continue;
+			}
+			if(@zenyuse != 0) {	
+				set Zeny,(Zeny-@zenyuse*@bought_quantity[.@g]);
+				dispbottom "-> เงินได้ถูกนำไปใช้จำนวน "+(@zenyuse*@bought_quantity[.@g])+" zeny";
+			}
+			if(@broken != 0) {	
+				set .@RTget,rand(1,100);
+				if(@broken < .@RTget) {
+					emotion 23;
+					specialeffect2 155;
+					dispbottom "Gang Gang Gang  Boommmm !!";
+					dispbottom "การเจาะรู "+getitemname(@bought_nameid[.@g])+" ["+getitemslots( @bought_nameid[.@g])+"] ล้มเหลว เสียใจด้วย !!";
+					set @bought_quantity[.@g],0;
+				}
+				if(@broken >= .@RTget) {
+					emotion 21;
+					specialeffect2 154;
+					dispbottom "Gang Gang Gang  Gang !!";
+					dispbottom "การเจาะรู "+getitemname(@bought_nameid[.@g])+" ["+getitemslots( @bought_nameid[.@g])+"] เสร็จสมบูรณ์  !!";
+				}
+			} 
+			if(@broken == 0) {
+				emotion 33;
+				specialeffect2 488;
+			}
+			getitem @bought_nameid[.@g],@bought_quantity[.@g];
+		}
+}
+dispbottom "=============================================";
+deletearray @bought_nameid[0],getarraysize(@bought_nameid);
+deletearray @bought_quantity[0],getarraysize(@bought_quantity);
+deletearray @itemuse[0],getarraysize(@itemuse);
+deletearray @itemusemany[0],getarraysize(@itemusemany);
+set @broken,0;	set @zenyuse, 0;
+end;
+}
+
+function	script	Q_ItemSell	{
+set Zeny, @zenyold;
+for (set .@g,0; .@g < getarraysize(@sold_nameid); set .@g,.@g+1) {
+	sleep2 1;
+	set @sold_nameid,@sold_nameid[.@g];
+	set @itemuse,0;	set @itemget,0;	set @zenyuse, 0;
+	callfunc "Q_Sell";
+		if(@itemuse <= 0)	goto check;
+			set @itemgetmany, @sold_quantity[.@g]/@itemuse;
+check:	
+	dispbottom "=============================================";
+		if(@itemuse <= 0){	
+			getitem @sold_nameid[.@g],@sold_quantity[.@g];
+			dispbottom "สามารถรวม Elunium กับ Oridecon และทำ Quiver Milk กับ 17 Caratได้เท่านั้น";	
+		}
+		else if (@itemgetmany == 0){
+			getitem @sold_nameid[.@g],@sold_quantity[.@g];
+			dispbottom "ต้องใช้ "+getitemname(@sold_nameid[.@g])+" อย่างน้อย "+@itemuse+" ea ในการแลก "+getitemname(@itemget)+"";
+			if(@zenyuse != 0) {	dispbottom	"และใช้เงินจำนวน  "+ @zenyuse +" Zeny";	}
+		}
+		else if (Zeny < (@zenyuse*@itemgetmany)){
+			getitem @sold_nameid[.@g],@sold_quantity[.@g];
+			dispbottom "เงินที่ท่านเตรียมมามีไม่พอ ต้องใช้เงินจำนวน  "+(@zenyuse*@itemgetmany)+" Zeny ในการแลก "+getitemname(@itemget)+" จำนวน "+@itemgetmany+" ea";
+		}
+		else if ((1 <= @itemgetmany) && (Zeny >= (@zenyuse*@itemgetmany))){
+			delitem @sold_nameid[.@g],@itemuse*@itemgetmany;
+			dispbottom "-> "+getitemname(@sold_nameid[.@g])+" ได้ถูกนำไปใช้จำนวน "+(@itemuse*@itemgetmany)+" ea";
+			if(@zenyuse != 0){
+				set Zeny,(Zeny-@zenyuse*@itemgetmany);
+				dispbottom "-> เงินได้ถูกนำไปใช้จำนวน "+(@zenyuse*@itemgetmany)+" zeny";			
+			}
+			getitem @sold_nameid[.@g],@sold_quantity[.@g]-@itemuse*@itemgetmany;
+			getitem @itemget,@itemgetmany;
+		}
+}
+dispbottom "=============================================";
+deletearray @sold_nameid[0],getarraysize(@sold_nameid);
+deletearray @sold_quantity[0],getarraysize(@sold_quantity);
+set @itemuse,0;	set @itemget,0;	set @zenyuse, 0;
+end;
+}
+
+//============================================== 
+
+
+	morocc,178,101,4	script	เควสหมวก	91,{ callfunc "qshop"; }
+	morocc,179,99,4	duplicate(Quest Shop)	Quest Shop#01	510
+	morocc,181,104,4	duplicate(Slot Shop)	Slot Shop#01	510
+
