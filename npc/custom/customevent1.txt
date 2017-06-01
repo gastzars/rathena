@@ -1,0 +1,591 @@
+izlude,128,152,4	script	Season Machine	564,{
+	mes "[Season Machine]";
+	mes "สะสมไอเทมสุ่มรับรางวัล";
+	mes "^000080+5,+6,+7,+8 Weapon Refine Ticket";
+	mes "+5,+6,+7,+8 Armor Refine Ticket";
+	mes "Blessed Elu, Blessed Ori";
+	next;
+	if (wm_ss_event_1 == 0) {
+		mes "[Season Machine]";
+		mes "ท่านยังไม่ได้รับภารกิจ";
+		next;
+		if(select("รับภารกิจ:ยกเลิก") == 1) close;
+		switch(rand(1, 105))
+		{
+			case 1:
+				set wm_ss_event_target_name$, "Resin";
+				set wm_ss_event_target, 907;
+				set wm_ss_event_target_amount, 105;
+				set wm_ss_event_1, 1;
+			case 2:
+				set wm_ss_event_target_name$, "Spawn";
+				set wm_ss_event_target, 908;
+				set wm_ss_event_target_amount, 105;
+				set wm_ss_event_1, 1;
+			case 3:
+				set wm_ss_event_target_name$, "Jellopy";
+				set wm_ss_event_target, 909;
+				set wm_ss_event_target_amount, 104;
+				set wm_ss_event_1, 1;
+			case 4:
+				set wm_ss_event_target_name$, "Garlet";
+				set wm_ss_event_target, 910;
+				set wm_ss_event_target_amount, 104;
+				set wm_ss_event_1, 1;
+			case 5:
+				set wm_ss_event_target_name$, "Scell";
+				set wm_ss_event_target, 911;
+				set wm_ss_event_target_amount, 104;
+				set wm_ss_event_1, 1;
+			case 6:
+				set wm_ss_event_target_name$, "Zargon";
+				set wm_ss_event_target, 912;
+				set wm_ss_event_target_amount, 103;
+				set wm_ss_event_1, 1;
+			case 7:
+				set wm_ss_event_target_name$, "Tooth of Bat";
+				set wm_ss_event_target, 913;
+				set wm_ss_event_target_amount, 103;
+				set wm_ss_event_1, 1;
+			case 8:
+				set wm_ss_event_target_name$, "Fluff";
+				set wm_ss_event_target, 914;
+				set wm_ss_event_target_amount, 103;
+				set wm_ss_event_1, 1;
+			case 9:
+				set wm_ss_event_target_name$, "Chrysalis";
+				set wm_ss_event_target, 915;
+				set wm_ss_event_target_amount, 102;
+				set wm_ss_event_1, 1;
+			case 10:
+				set wm_ss_event_target_name$, "Feather of Birds";
+				set wm_ss_event_target, 916;
+				set wm_ss_event_target_amount, 102;
+				set wm_ss_event_1, 1;
+			case 11:
+				set wm_ss_event_target_name$, "Talon";
+				set wm_ss_event_target, 917;
+				set wm_ss_event_target_amount, 102;
+				set wm_ss_event_1, 1;
+			case 12:
+				set wm_ss_event_target_name$, "Sticky Webfoot";
+				set wm_ss_event_target, 918;
+				set wm_ss_event_target_amount, 101;
+				set wm_ss_event_1, 1;
+			case 13:
+				set wm_ss_event_target_name$, "Animal Skin";
+				set wm_ss_event_target, 919;
+				set wm_ss_event_target_amount, 101;
+				set wm_ss_event_1, 1;
+			case 14:
+				set wm_ss_event_target_name$, "Wolf Claw";
+				set wm_ss_event_target, 920;
+				set wm_ss_event_target_amount, 101;
+				set wm_ss_event_1, 1;
+			case 15:
+				set wm_ss_event_target_name$, "Mushroom Spore";
+				set wm_ss_event_target, 921;
+				set wm_ss_event_target_amount, 100;
+				set wm_ss_event_1, 1;
+			case 16:
+				set wm_ss_event_target_name$, "Orc's Fang";
+				set wm_ss_event_target, 922;
+				set wm_ss_event_target_amount, 100;
+				set wm_ss_event_1, 1;
+			case 17:
+				set wm_ss_event_target_name$, "Powder of Butterfly";
+				set wm_ss_event_target, 924;
+				set wm_ss_event_target_amount, 100;
+				set wm_ss_event_1, 1;
+			case 18:
+				set wm_ss_event_target_name$, "Bill of Birds";
+				set wm_ss_event_target, 925;
+				set wm_ss_event_target_amount, 99;
+				set wm_ss_event_1, 1;
+			case 19:
+				set wm_ss_event_target_name$, "Snake Scale";
+				set wm_ss_event_target, 926;
+				set wm_ss_event_target_amount, 99;
+				set wm_ss_event_1, 1;
+			case 20:
+				set wm_ss_event_target_name$, "Insect Feeler";
+				set wm_ss_event_target, 928;
+				set wm_ss_event_target_amount, 99;
+				set wm_ss_event_1, 1;
+			case 21:
+				set wm_ss_event_target_name$, "Immortal Heart";
+				set wm_ss_event_target, 929;
+				set wm_ss_event_target_amount, 98;
+				set wm_ss_event_1, 1;
+			case 22:
+				set wm_ss_event_target_name$, "Rotten Bandage";
+				set wm_ss_event_target, 930;
+				set wm_ss_event_target_amount, 98;
+				set wm_ss_event_1, 1;
+			case 23:
+				set wm_ss_event_target_name$, "Orcish Voucher";
+				set wm_ss_event_target, 931;
+				set wm_ss_event_target_amount, 98;
+				set wm_ss_event_1, 1;
+			case 24:
+				set wm_ss_event_target_name$, "Skel-Bone";
+				set wm_ss_event_target, 932;
+				set wm_ss_event_target_amount, 97;
+				set wm_ss_event_1, 1;
+			case 25:
+				set wm_ss_event_target_name$, "Memento";
+				set wm_ss_event_target, 934;
+				set wm_ss_event_target_amount, 97;
+				set wm_ss_event_1, 1;
+			case 26:
+				set wm_ss_event_target_name$, "Shell";
+				set wm_ss_event_target, 935;
+				set wm_ss_event_target_amount, 97;
+				set wm_ss_event_1, 1;
+			case 27:
+				set wm_ss_event_target_name$, "Scale Shell";
+				set wm_ss_event_target, 936;
+				set wm_ss_event_target_amount, 96;
+				set wm_ss_event_1, 1;
+			case 28:
+				set wm_ss_event_target_name$, "Venom Canine";
+				set wm_ss_event_target, 937;
+				set wm_ss_event_target_amount, 96;
+				set wm_ss_event_1, 1;
+			case 29:
+				set wm_ss_event_target_name$, "Sticky Mucus";
+				set wm_ss_event_target, 938;
+				set wm_ss_event_target_amount, 96;
+				set wm_ss_event_1, 1;
+			case 30:
+				set wm_ss_event_target_name$, "Bee Sting";
+				set wm_ss_event_target, 939;
+				set wm_ss_event_target_amount, 95;
+				set wm_ss_event_1, 1;
+			case 31:
+				set wm_ss_event_target_name$, "Grasshopper's Leg";
+				set wm_ss_event_target, 940;
+				set wm_ss_event_target_amount, 95;
+				set wm_ss_event_1, 1;
+			case 32:
+				set wm_ss_event_target_name$, "Nose Ring";
+				set wm_ss_event_target, 941;
+				set wm_ss_event_target_amount, 95;
+				set wm_ss_event_1, 1;
+			case 33:
+				set wm_ss_event_target_name$, "Yoyo Tail";
+				set wm_ss_event_target, 942;
+				set wm_ss_event_target_amount, 94;
+				set wm_ss_event_1, 1;
+			case 34:
+				set wm_ss_event_target_name$, "Solid Shell";
+				set wm_ss_event_target, 943;
+				set wm_ss_event_target_amount, 94;
+				set wm_ss_event_1, 1;
+			case 35:
+				set wm_ss_event_target_name$, "Horseshoe";
+				set wm_ss_event_target, 944;
+				set wm_ss_event_target_amount, 94;
+				set wm_ss_event_1, 1;
+			case 36:
+				set wm_ss_event_target_name$, "Raccoon Leaf";
+				set wm_ss_event_target, 945;
+				set wm_ss_event_target_amount, 93;
+				set wm_ss_event_1, 1;
+			case 37:
+				set wm_ss_event_target_name$, "Snail's Shell";
+				set wm_ss_event_target, 946;
+				set wm_ss_event_target_amount, 93;
+				set wm_ss_event_1, 1;
+			case 38:
+				set wm_ss_event_target_name$, "Horn";
+				set wm_ss_event_target, 947;
+				set wm_ss_event_target_amount, 93;
+				set wm_ss_event_1, 1;
+			case 39:
+				set wm_ss_event_target_name$, "Bear's Footskin";
+				set wm_ss_event_target, 948;
+				set wm_ss_event_target_amount, 92;
+				set wm_ss_event_1, 1;
+			case 40:
+				set wm_ss_event_target_name$, "Feather";
+				set wm_ss_event_target, 949;
+				set wm_ss_event_target_amount, 92;
+				set wm_ss_event_1, 1;
+			case 41:
+				set wm_ss_event_target_name$, "Heart of Mermaid";
+				set wm_ss_event_target, 950;
+				set wm_ss_event_target_amount, 92;
+				set wm_ss_event_1, 1;
+			case 42:
+				set wm_ss_event_target_name$, "Fin";
+				set wm_ss_event_target, 951;
+				set wm_ss_event_target_amount, 91;
+				set wm_ss_event_1, 1;
+			case 43:
+				set wm_ss_event_target_name$, "Cactus Needle";
+				set wm_ss_event_target, 952;
+				set wm_ss_event_target_amount, 91;
+				set wm_ss_event_1, 1;
+			case 44:
+				set wm_ss_event_target_name$, "Stone Heart";
+				set wm_ss_event_target, 953;
+				set wm_ss_event_target_amount, 91;
+				set wm_ss_event_1, 1;
+			case 45:
+				set wm_ss_event_target_name$, "Shining Scale";
+				set wm_ss_event_target, 954;
+				set wm_ss_event_target_amount, 90;
+				set wm_ss_event_1, 1;
+			case 46:
+				set wm_ss_event_target_name$, "Worm Peeling";
+				set wm_ss_event_target, 955;
+				set wm_ss_event_target_amount, 90;
+				set wm_ss_event_1, 1;
+			case 47:
+				set wm_ss_event_target_name$, "Gill";
+				set wm_ss_event_target, 956;
+				set wm_ss_event_target_amount, 90;
+				set wm_ss_event_1, 1;
+			case 48:
+				set wm_ss_event_target_name$, "Decayed Nail";
+				set wm_ss_event_target, 957;
+				set wm_ss_event_target_amount, 89;
+				set wm_ss_event_1, 1;
+			case 49:
+				set wm_ss_event_target_name$, "Horrendous Mouth";
+				set wm_ss_event_target, 958;
+				set wm_ss_event_target_amount, 89;
+				set wm_ss_event_1, 1;
+			case 50:
+				set wm_ss_event_target_name$, "Stinky Scale";
+				set wm_ss_event_target, 959;
+				set wm_ss_event_target_amount, 89;
+				set wm_ss_event_1, 1;
+			case 51:
+				set wm_ss_event_target_name$, "Nipper";
+				set wm_ss_event_target, 960;
+				set wm_ss_event_target_amount, 88;
+				set wm_ss_event_1, 1;
+			case 52:
+				set wm_ss_event_target_name$, "Conch";
+				set wm_ss_event_target, 961;
+				set wm_ss_event_target_amount, 88;
+				set wm_ss_event_1, 1;
+			case 53:
+				set wm_ss_event_target_name$, "Tentacle";
+				set wm_ss_event_target, 962;
+				set wm_ss_event_target_amount, 88;
+				set wm_ss_event_1, 1;
+			case 54:
+				set wm_ss_event_target_name$, "Sharp Scale";
+				set wm_ss_event_target, 963;
+				set wm_ss_event_target_amount, 87;
+				set wm_ss_event_1, 1;
+			case 55:
+				set wm_ss_event_target_name$, "Crab Shell";
+				set wm_ss_event_target, 964;
+				set wm_ss_event_target_amount, 87;
+				set wm_ss_event_1, 1;
+			case 56:
+				set wm_ss_event_target_name$, "Clam Shell";
+				set wm_ss_event_target, 965;
+				set wm_ss_event_target_amount, 87;
+				set wm_ss_event_1, 1;
+			case 57:
+				set wm_ss_event_target_name$, "Clam Flesh";
+				set wm_ss_event_target, 966;
+				set wm_ss_event_target_amount, 86;
+				set wm_ss_event_1, 1;
+			case 58:
+				set wm_ss_event_target_name$, "Turtle Shell";
+				set wm_ss_event_target, 967;
+				set wm_ss_event_target_amount, 86;
+				set wm_ss_event_1, 1;
+			case 59:
+				set wm_ss_event_target_name$, "Frill";
+				set wm_ss_event_target, 1012;
+				set wm_ss_event_target_amount, 86;
+				set wm_ss_event_1, 1;
+			case 60:
+				set wm_ss_event_target_name$, "Rainbow Shell";
+				set wm_ss_event_target, 1013;
+				set wm_ss_event_target_amount, 85;
+				set wm_ss_event_1, 1;
+			case 61:
+				set wm_ss_event_target_name$, "Ant Jaw";
+				set wm_ss_event_target, 1014;
+				set wm_ss_event_target_amount, 85;
+				set wm_ss_event_1, 1;
+			case 62:
+				set wm_ss_event_target_name$, "Rat Tail";
+				set wm_ss_event_target, 1016;
+				set wm_ss_event_target_amount, 85;
+				set wm_ss_event_1, 1;
+			case 63:
+				set wm_ss_event_target_name$, "Mole Whiskers";
+				set wm_ss_event_target, 1017;
+				set wm_ss_event_target_amount, 84;
+				set wm_ss_event_1, 1;
+			case 64:
+				set wm_ss_event_target_name$, "Mole Claw";
+				set wm_ss_event_target, 1018;
+				set wm_ss_event_target_amount, 84;
+				set wm_ss_event_1, 1;
+			case 65:
+				set wm_ss_event_target_name$, "Trunk";
+				set wm_ss_event_target, 1019;
+				set wm_ss_event_target_amount, 84;
+				set wm_ss_event_1, 1;
+			case 66:
+				set wm_ss_event_target_name$, "Black Hair";
+				set wm_ss_event_target, 1020;
+				set wm_ss_event_target_amount, 83;
+				set wm_ss_event_1, 1;
+			case 67:
+				set wm_ss_event_target_name$, "Dokebi Horn";
+				set wm_ss_event_target, 1021;
+				set wm_ss_event_target_amount, 83;
+				set wm_ss_event_1, 1;
+			case 68:
+				set wm_ss_event_target_name$, "Nine Tails";
+				set wm_ss_event_target, 1022;
+				set wm_ss_event_target_amount, 83;
+				set wm_ss_event_1, 1;
+			case 69:
+				set wm_ss_event_target_name$, "Fish Tail";
+				set wm_ss_event_target, 1023;
+				set wm_ss_event_target_amount, 82;
+				set wm_ss_event_1, 1;
+			case 70:
+				set wm_ss_event_target_name$, "Squid Ink";
+				set wm_ss_event_target, 1024;
+				set wm_ss_event_target_amount, 82;
+				set wm_ss_event_1, 1;
+			case 71:
+				set wm_ss_event_target_name$, "Cobweb";
+				set wm_ss_event_target, 1025;
+				set wm_ss_event_target_amount, 82;
+				set wm_ss_event_1, 1;
+			case 72:
+				set wm_ss_event_target_name$, "Acorn";
+				set wm_ss_event_target, 1026;
+				set wm_ss_event_target_amount, 81;
+				set wm_ss_event_1, 1;
+			case 73:
+				set wm_ss_event_target_name$, "Porcupine Quill";
+				set wm_ss_event_target, 1027;
+				set wm_ss_event_target_amount, 81;
+				set wm_ss_event_1, 1;
+			case 74:
+				set wm_ss_event_target_name$, "Mane";
+				set wm_ss_event_target, 1028;
+				set wm_ss_event_target_amount, 81;
+				set wm_ss_event_1, 1;
+			case 75:
+				set wm_ss_event_target_name$, "Mantis Scythe";
+				set wm_ss_event_target, 1031;
+				set wm_ss_event_target_amount, 80;
+				set wm_ss_event_1, 1;
+			case 76:
+				set wm_ss_event_target_name$, "Maneater Blossom";
+				set wm_ss_event_target, 1032;
+				set wm_ss_event_target_amount, 80;
+				set wm_ss_event_1, 1;
+			case 77:
+				set wm_ss_event_target_name$, "Maneater Root";
+				set wm_ss_event_target, 1033;
+				set wm_ss_event_target_amount, 80;
+				set wm_ss_event_1, 1;
+			case 78:
+				set wm_ss_event_target_name$, "Blue Hair";
+				set wm_ss_event_target, 1034;
+				set wm_ss_event_target_amount, 79;
+				set wm_ss_event_1, 1;
+			case 79:
+				set wm_ss_event_target_name$, "Dragon Canine";
+				set wm_ss_event_target, 1035;
+				set wm_ss_event_target_amount, 79;
+				set wm_ss_event_1, 1;
+			case 80:
+				set wm_ss_event_target_name$, "Dragon Scale";
+				set wm_ss_event_target, 1036;
+				set wm_ss_event_target_amount, 79;
+				set wm_ss_event_1, 1;
+			case 81:
+				set wm_ss_event_target_name$, "Elder Pixie's Moustache";
+				set wm_ss_event_target, 1040;
+				set wm_ss_event_target_amount, 78;
+				set wm_ss_event_1, 1;
+			case 82:
+				set wm_ss_event_target_name$, "Lantern";
+				set wm_ss_event_target, 1041;
+				set wm_ss_event_target_amount, 78;
+				set wm_ss_event_1, 1;
+			case 83:
+				set wm_ss_event_target_name$, "Bug Leg";
+				set wm_ss_event_target, 1042;
+				set wm_ss_event_target_amount, 78;
+				set wm_ss_event_1, 1;
+			case 84:
+				set wm_ss_event_target_name$, "Orc Claw";
+				set wm_ss_event_target, 1043;
+				set wm_ss_event_target_amount, 77;
+				set wm_ss_event_1, 1;
+			case 85:
+				set wm_ss_event_target_name$, "Zenorc's Fang";
+				set wm_ss_event_target, 1044;
+				set wm_ss_event_target_amount, 77;
+				set wm_ss_event_1, 1;
+			case 86:
+				set wm_ss_event_target_name$, "Cultish Masque";
+				set wm_ss_event_target, 1045;
+				set wm_ss_event_target_amount, 77;
+				set wm_ss_event_1, 1;
+			case 87:
+				set wm_ss_event_target_name$, "Scorpion Nipper";
+				set wm_ss_event_target, 1046;
+				set wm_ss_event_target_amount, 76;
+				set wm_ss_event_1, 1;
+			case 88:
+				set wm_ss_event_target_name$, "Skirt of Virgin";
+				set wm_ss_event_target, 1049;
+				set wm_ss_event_target_amount, 76;
+				set wm_ss_event_1, 1;
+			case 89:
+				set wm_ss_event_target_name$, "Tendon";
+				set wm_ss_event_target, 1050;
+				set wm_ss_event_target_amount, 76;
+				set wm_ss_event_1, 1;
+			case 90:
+				set wm_ss_event_target_name$, "Detonator";
+				set wm_ss_event_target, 1051;
+				set wm_ss_event_target_amount, 75;
+				set wm_ss_event_1, 1;
+			case 91:
+				set wm_ss_event_target_name$, "Single Cell";
+				set wm_ss_event_target, 1052;
+				set wm_ss_event_target_amount, 75;
+				set wm_ss_event_1, 1;
+			case 92:
+				set wm_ss_event_target_name$, "Ancient Tooth";
+				set wm_ss_event_target, 1053;
+				set wm_ss_event_target_amount, 75;
+				set wm_ss_event_1, 1;
+			case 93:
+				set wm_ss_event_target_name$, "Earthworm Peeling";
+				set wm_ss_event_target, 1055;
+				set wm_ss_event_target_amount, 74;
+				set wm_ss_event_1, 1;
+			case 94:
+				set wm_ss_event_target_name$, "Grit";
+				set wm_ss_event_target, 1056;
+				set wm_ss_event_target_amount, 74;
+				set wm_ss_event_1, 1;
+			case 95:
+				set wm_ss_event_target_name$, "Moth Dust";
+				set wm_ss_event_target, 1057;
+				set wm_ss_event_target_amount, 74;
+				set wm_ss_event_1, 1;
+			case 96:
+				set wm_ss_event_target_name$, "Moth Wings";
+				set wm_ss_event_target, 1058;
+				set wm_ss_event_target_amount, 73;
+				set wm_ss_event_1, 1;
+			case 97:
+				set wm_ss_event_target_name$, "Fabric";
+				set wm_ss_event_target, 1059;
+				set wm_ss_event_target_amount, 73;
+				set wm_ss_event_1, 1;
+			case 98:
+				set wm_ss_event_target_name$, "Golden Hair";
+				set wm_ss_event_target, 1060;
+				set wm_ss_event_target_amount, 73;
+				set wm_ss_event_1, 1;
+			case 99:
+				set wm_ss_event_target_name$, "Witched Starsand";
+				set wm_ss_event_target, 1061;
+				set wm_ss_event_target_amount, 72;
+				set wm_ss_event_1, 1;
+			case 100:
+				set wm_ss_event_target_name$, "Jack o' Pumpkin";
+				set wm_ss_event_target, 1062;
+				set wm_ss_event_target_amount, 72;
+				set wm_ss_event_1, 1;
+			case 101:
+				set wm_ss_event_target_name$, "Short Daenggie";
+				set wm_ss_event_target, 1094;
+				set wm_ss_event_target_amount, 72;
+				set wm_ss_event_1, 1;
+			case 102:
+				set wm_ss_event_target_name$, "Needle of Alarm";
+				set wm_ss_event_target, 1095;
+				set wm_ss_event_target_amount, 71;
+				set wm_ss_event_1, 1;
+			case 103:
+				set wm_ss_event_target_name$, "Round Shell";
+				set wm_ss_event_target, 1096;
+				set wm_ss_event_target_amount, 71;
+				set wm_ss_event_1, 1;
+			case 104:
+				set wm_ss_event_target_name$, "Manacles";
+				set wm_ss_event_target, 1098;
+				set wm_ss_event_target_amount, 71;
+				set wm_ss_event_1, 1;
+			case 105:
+				set wm_ss_event_target_name$, "Worn-out Prison Uniform";
+				set wm_ss_event_target, 1099;
+				set wm_ss_event_target_amount, 70;
+				set wm_ss_event_1, 1;
+
+
+		}
+		mes "[Season Machine]";
+		mes "ภารกิจของท่านคือการสะสม";
+		mes "ไอเทม "+wm_ss_event_target_name$+" : "+wm_ss_event_target_amount+" ชิ้น";
+		mes "และเงิน 2,000,000 zeny";
+		next;
+		mes "[Season Machine]";
+		mes "กลับมารับรางวัลเมื่อท่านได้ไอเทมครบตามที่กำหนด";
+		close;
+	} else if (wm_ss_event_1 == 1) {
+		mes "[Season Machine]";
+		mes "ภารกิจของท่านคือการสะสม";
+		mes "ไอเทม "+wm_ss_event_target_name$+" : "+wm_ss_event_target_amount+" ชิ้น";
+		mes "และเงิน 2,000,000 zeny";
+		next;
+		switch(select("รับรางวัล:ยกเลิกภารกิจ (100,000z):ยกเลิก"))
+		{
+			case 0:
+				if (countitem(wm_ss_event_target) > wm_ss_event_target_amount && Zeny > 2000000) {
+					mes "[Season Machine]";
+					mes "ภารกิจสำเร็จ";
+					delitem wm_ss_event_target, wm_ss_event_target_amount;
+					Zeny -= 2000000;
+					getitem 40013, 1;
+					close;
+				} else {
+					mes "[Season Machine]";
+					mes "ท่านมี ไอเทมหรือเงินไม่ครบตามกำหนด";
+					next;
+					mes "[Season Machine]";
+					mes "ภารกิจของท่านคือการสะสม";
+					mes "ไอเทม "+wm_ss_event_target_name$+" : "+wm_ss_event_target_amount+" ชิ้น";
+					mes "และเงิน 2,000,000 zeny";
+				}
+				close;
+			case 1:
+				if (Zeny < 100000) {
+					mes "[Season Machine]";
+					mes "ท่านมีเงินไม่เพียงพอ";
+					close;
+				}
+			case 2:
+				end;
+		}
+	}
+	
+OnInit:
+	waitingroom "Collecting Event",0;
+	end;
+}

@@ -42,8 +42,18 @@
 	if (.@Delay)
 		@HD = gettimetick(2) + .@Delay;
 	end;
+OnInit:
+        waitingroom "Heal & AB",0;
+        end;
+
 }
 
+izlude,143,137,1	script	SignGroup	857,{
+	end;
+OnInit:
+	waitingroom "Facebook Group 'WhiteMoon'",0;
+        end;
+}
 
 // Duplicates
 //============================================================

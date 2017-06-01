@@ -14,7 +14,7 @@
 //= Item Preview script by ToastOfDoom.
 //============================================================
 					
-celestiaj,146,131,5	script	Hat Maker	58,{
+izlude,137,153,5	script	Hat Maker	10121,{
 function Add; function Chk; function Slot; function A_An;
 
 	if(.Shops$ != "") set .@i,1;
@@ -472,7 +472,10 @@ OnInit:
 // --------------------------------------------------
 	for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1)
 		npcshopdelitem "hatmaker"+.@i,909;
-	end;
+
+        waitingroom "Hat Makers",0;
+        end;
+
 }
 
 // -------- Dummy data (duplicate as needed) --------
