@@ -28,7 +28,7 @@
 //= 1.6 Added VIP features. [Euphy]
 //============================================================
 
-payon,157,146,6	script	Suhnbi#cash	85,{
+-	script	::SuhnbiRefine	-1,{
 	disable_items;
 	mes "[Suhnbi]";
 	mes "I am the Armsmith";
@@ -176,3 +176,6 @@ S_RefineValidate:
 	mes "I can't help it even if you're not happy about it...";
 	close;
 }
+
+payon,157,146,6	duplicate(SuhnbiRefine)	Suhnbi#cash	85
+izlude,155,129,6	duplicate(SuhnbiRefine)	Suhnbi#wmsuhniz	85

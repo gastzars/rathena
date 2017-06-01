@@ -173,5 +173,5 @@ yuno_in01,175,18,3	duplicate(BlacksmithDister)	Blacksmith Dister#yuno	826
 ein_in01,26,82,3	duplicate(BlacksmithDister)	Blacksmith Dister#ein	826
 lhz_in02,280,15,3	duplicate(BlacksmithDister)	Blacksmith Dister#lhz	826
 
-izlude,155,129,6	duplicate(BlacksmithDister)	Blacksmith Dister#wmiz	826
+izlude,158,127,6	duplicate(BlacksmithDister)	Blacksmith Dister#wmiz	826
 
