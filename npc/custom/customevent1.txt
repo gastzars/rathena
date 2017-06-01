@@ -4,12 +4,13 @@ izlude,128,152,4	script	Season Machine	564,{
 	mes "^000080+5,+6,+7,+8 Weapon Refine Ticket";
 	mes "+5,+6,+7,+8 Armor Refine Ticket";
 	mes "Blessed Elu, Blessed Ori";
+	mes "Enriched Elu, Enriched Ori";
 	next;
 	if (wm_ss_event_1 == 0) {
 		mes "[Season Machine]";
 		mes "ท่านยังไม่ได้รับภารกิจ";
 		next;
-		if(select("รับภารกิจ:ยกเลิก") == 1) end;
+		if(select("รับภารกิจ:ยกเลิก") == 2) end;
 		switch(rand(1, 105))
 		{
 			case 1:
