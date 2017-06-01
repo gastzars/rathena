@@ -34,3 +34,11 @@ prontera,251,66	monster	Dummy Lv100	2410,1,5000
 prontera,259,66	monster	Dummy Lv100	2410,1,5000
 prontera,251,55	monster	Dummy Lv150	2411,1,5000
 prontera,259,55	monster	Dummy Lv150	2411,1,5000
+
+
+izlude,100,157	monster	Dummy Lv50	2409,1,5000
+izlude,88,157	monster	Dummy Lv50	2409,1,5000
+izlude,100,162	monster	Dummy Lv100	2410,1,5000
+izlude,88,162	monster	Dummy Lv100	2410,1,5000
+izlude,100,167	monster	Dummy Lv150	2411,1,5000
+izlude,88,167	monster	Dummy Lv150	2411,1,5000
