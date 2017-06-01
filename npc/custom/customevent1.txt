@@ -592,6 +592,7 @@ izlude,128,152,4	script	Season Machine	564,{
 					set wm_ss_event_1, 0;
 					Zeny -= 100000;
 					close;
+				}
 				break;
 			case 3:
 				end;
